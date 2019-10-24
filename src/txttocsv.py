@@ -1,16 +1,18 @@
 import os
 
 
-class FileManaging:
+class TxtToCsv:
     def __init__(self, filepath, filename):
         """
-        Encapsulates everything related to plain text to CSV files.
-        :param filepath:
-        :param filename:
+        Encapsulates everything related to the conversion of
+         plain text files to CSV files, and the selection of these plain
+         text files.
+        :param filepath: path to the location of the dataset
+        :param filename: name of the concrete file to convert
         """
         self._filepath = filepath
         self._filename = filename
-        self._lines = self._open_doc(filepath + filename)
+        self._lines = self._open_doc(filepath + "/" + filename)
         self._sensor_list = self._get_sensors_list()
 
     def _open_doc(self, file):
@@ -91,7 +93,7 @@ class FileManaging:
             sensor_list.append(sensor)
         return sensor_list
 
-    def list_to_csv(self):
+    def get_csv(self):
         """
         Gets a csv for every sensor in the sensor list
         :param sensor_list: A list of lists where each element is a CSV table for

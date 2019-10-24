@@ -1,3 +1,9 @@
+import os
 from txttocsv import TxtToCsv
 
-hola = TxtToCsv("/home/alex/Documents/Clase/TFG/Dataset/iskra", "1-2embarres.txt").get_csv()
+path = "/home/alex/Documents/Clase/TFG/Dataset/iskra"
+
+filenames = os.listdir(path)
+
+for filename in filenames:
+    TxtToCsv(path, filename).get_csv()

@@ -104,6 +104,7 @@ pyvenv.cfg
 .env
 .venv
 env/
+tfgenv/
 venv/
 ENV/
 env.bak/

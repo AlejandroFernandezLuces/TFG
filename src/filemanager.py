@@ -1,7 +1,7 @@
 import os
 
 
-class filemanager:
+class FileManager:
     def __init__(self, dataset_path):
         """
         Encapsulates everything related to the conversion of
@@ -117,8 +117,8 @@ class filemanager:
 
         if not os.path.exists(absolute_path):
             os.mkdir(absolute_path)
-        lines = filemanager._open_doc(self, filename)
-        sensor_list = filemanager._get_sensors_list(self, lines)
+        lines = FileManager._open_doc(self, filename)
+        sensor_list = FileManager._get_sensors_list(self, lines)
         for i in range(len(sensor_list)):
             code = sensor_list[i][1].split(",")[0]
             with open(absolute_path + code + ".csv", "w+") as csv:
@@ -129,4 +129,4 @@ class filemanager:
         filenames = os.listdir(self._dataset_path)
         for filename in filenames:
             if ".txt" in filename:
-                filemanager(self._dataset_path).get_csv(filename)
+                FileManager(self._dataset_path).get_csv(filename)

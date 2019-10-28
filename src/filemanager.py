@@ -74,7 +74,6 @@ class FileManager:
                 j += 1
             start_end_index.append([start_lines[i], end_lines[j]])
         return start_end_index, code_name_assoc
-        # TODO: substituir codigos por nomes
 
     def _get_sensors_list(self, lines):
         """
@@ -87,14 +86,24 @@ class FileManager:
         """
         start_end_index, code_name = self._get_tables_index(lines)
         sensor_list = []
+        column_num = 9 # NUMERO HARD CODED!!
         for i in range(len(start_end_index)):
             sensor = []
             sensor_code = lines[start_end_index[i][0] + 1].split(",")[0]
             for j in range(start_end_index[i][0], start_end_index[i][1]):
-
+                line = lines[j]
+                splitted_line = line.split(",")
+                """if j == start_end_index[i][0]:
+                    column_num = len(splitted_line)
+                real_line_index = len(splitted_line) - column_num"""
+                if len(splitted_line) > 9:
+                    splitted_line = splitted_line[:column_num - 1] # problem
+                    splitted_line.append("\n")
+                line = ",".join(splitted_line)
                 sensor_name = code_name[sensor_code]
-                line = lines[j].replace(sensor_code, sensor_name)
+                line = line.replace(sensor_code, sensor_name)
                 sensor.append(line)
+
             sensor_list.append(sensor)
         return sensor_list
 

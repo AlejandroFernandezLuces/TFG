@@ -90,14 +90,13 @@ class FileManager:
         for i in range(len(start_end_index)):
             sensor = []
             sensor_code = lines[start_end_index[i][0] + 1].split(",")[0]
+            # TODO: deshardcodear o numero de columnas
+            #column_num = len(lines[start_end_index[i][0] + 1].split(","))
             for j in range(start_end_index[i][0], start_end_index[i][1]):
                 line = lines[j]
                 splitted_line = line.split(",")
-                """if j == start_end_index[i][0]:
-                    column_num = len(splitted_line)
-                real_line_index = len(splitted_line) - column_num"""
                 if len(splitted_line) > 9:
-                    splitted_line = splitted_line[:column_num - 1] # problem
+                    splitted_line = splitted_line[:column_num - 1]
                     splitted_line.append("\n")
                 line = ",".join(splitted_line)
                 sensor_name = code_name[sensor_code]
@@ -108,6 +107,13 @@ class FileManager:
         return sensor_list
 
     def _rename_sensor(self, code, line, dict):
+        """
+        Substitutes the code name (i.e. C59D) to a human readable name.
+        :param code:
+        :param line:
+        :param dict:
+        :return:
+        """
         name = dict[code]
         return line.replace(code, name)
 
@@ -135,6 +141,11 @@ class FileManager:
                     csv.write(row)
 
     def get_all_csv(self):
+        """
+        Iterates all TXT files in the specified directory and converts them
+        to the appropiate CSV files, using the get_csv function
+        :return:
+        """
         filenames = os.listdir(self._dataset_path)
         for filename in filenames:
             if ".txt" in filename:

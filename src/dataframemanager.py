@@ -1,10 +1,10 @@
 import pandas as pd
-from filemanager import FileManager
+import filemanager as fm
 import numpy as np
 import os
 import matplotlib.pyplot as plt
 
-path = "/home/alex/Documents/Clase/TFG/Dataset/iskra"
+#path = "/home/alex/Documents/Clase/TFG/Dataset/iskra"
 
 class DataframeManager:
 
@@ -48,22 +48,23 @@ class DataframeManager:
         :return: a list with the dataframes
         """
         sensor_df_list = []
-        filenames = os.listdir(path)
-        for filename in filenames:
-            #removes the .csv extension
-            sensor_name = filename[:-4]
-            sensor_df = pd.read_csv(path + filename)
-            # drops the unnecessary columns
-            sensor_df = sensor_df.drop(columns=["Comment", "Latitude", "Longitude",
-                                                "Sonda(m)", "Code"])
-            sensor_df = DataframeManager._fix_time(sensor_df)
-            sensor_df = DataframeManager._process_nan(sensor_df)
+        if os.path.isdir(path):
+            filenames = os.listdir(path)
+            for filename in filenames:
+                #removes the .csv extension
+                sensor_name = filename[:-4]
+                sensor_df = pd.read_csv(path + filename)
+                # drops the unnecessary columns
+                sensor_df = sensor_df.drop(columns=["Comment", "Latitude", "Longitude",
+                                                    "Sonda(m)", "Code"])
+                sensor_df = DataframeManager._fix_time(sensor_df)
+                sensor_df = DataframeManager._process_nan(sensor_df)
 
-            #resamples the df to minute frequency
-            sensor_df = sensor_df.resample("Min").mean()
-            sensor_df = DataframeManager._rename_columns(sensor_df, sensor_name)
-            sensor_df_list.append(sensor_df)
-        return sensor_df_list
+                #resamples the df to minute frequency
+                sensor_df = sensor_df.resample("Min").mean()
+                sensor_df = DataframeManager._rename_columns(sensor_df, sensor_name)
+                sensor_df_list.append(sensor_df)
+            return sensor_df_list
 
     @staticmethod
     def _join_dataframes(sensor_df_list):
@@ -90,7 +91,7 @@ class DataframeManager:
         return  sensor_df
 
     @staticmethod
-    def get_dataframe(path):
+    def     get_dataframe(path):
         """
         Given a path to a folder with the sensor CSV files inside, it returns a
         dataframe with fixed NaNs and all sensors joined in one df.
@@ -98,6 +99,8 @@ class DataframeManager:
         :return: Dataframe with all sensors.
         """
         dataframe_list = DataframeManager._create_dataframes(path)
+        if len(dataframe_list) == 0:
+            print(path)
         return  DataframeManager._join_dataframes(dataframe_list)
 
     @staticmethod
@@ -122,9 +125,9 @@ class DataframeManager:
         filenames = os.listdir(path)
         dataframe_list = []
         for filename in filenames:
-            if ".txt" not in filename:
-                dataframe_list.append(DataframeManager.get_dataframe(path + "/"
-                                                                 + filename + "/"))
+            if os.path.isdir(path + filename):
+                dataframe_list.append(DataframeManager
+                                      .get_dataframe(path + filename + "/"))
         return dataframe_list
 
     def separate_df(self):

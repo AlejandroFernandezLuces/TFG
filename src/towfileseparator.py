@@ -1,7 +1,12 @@
-from dataframemanager import DataframeManager
+import dataframemanager as dfm
 import filemanager as fm
 import math
 
+"""
+Omellor este ficheiro deberia ir dentro de dataframemanager, porque fai 
+operacions sobre os dataframes, ainda que sexan lixeiramente diferentes
+
+"""
 
 def select_valid_index(towing_data):
     """
@@ -60,13 +65,13 @@ def separate_tows(origin_path, saving_path):
     :return: CSV files
     """
 
-    unseparated_df_list = DataframeManager.get_all_dataframes(origin_path)
+    unseparated_df_list = dfm.get_all_dataframes(origin_path)
     df_index = 0
 
     for unseparated_df in unseparated_df_list:
         towing_data_only = unseparated_df.where\
             (unseparated_df["Escalas(m)Estribor"] >
-             unseparated_df["Escalas(m)Estribor"].mean())
+             3*unseparated_df["Escalas(m)Estribor"].mean()/4)
 
 
         start_index, end_index = limits_index(towing_data_only)
@@ -74,10 +79,11 @@ def separate_tows(origin_path, saving_path):
 
         df_index += 1
 
-
+"""
 path = "/home/alex/Documents/Clase/TFG/Dataset/iskra/"
 saving_path =  "/home/alex/Documents/Clase/TFG/Dataset/csv_files/"
 
 fm.get_all_csv(path)
 
 separate_tows(path, saving_path)
+"""

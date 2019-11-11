@@ -10,9 +10,14 @@ def _process_nan(sensor_df):
     :return: the df with the interpolated values
     """
     sensor_df = sensor_df.replace('---', -1)
+    sensor_df = sensor_df.replace('---.---', -1)
+    sensor_df = sensor_df.replace('Off.---', "Off")
+    sensor_df = sensor_df.replace('On.---', "On")
+
     sensor_df = sensor_df.replace('Off', 0)
     sensor_df = sensor_df.replace('On', 1)
-    sensor_df = sensor_df.astype(int)
+    sensor_df = sensor_df.astype(float)
+
     sensor_df = sensor_df.replace(-1, np.NAN)
     sensor_df = sensor_df.interpolate()  # reconstrue os NAN's, pero e bo mirar un analisis mellor
     return sensor_df
@@ -31,6 +36,23 @@ def _rename_columns(sensor_df, sensor_name):
     sensor_df = sensor_df.rename(columns=rename_dict)
     return sensor_df
 
+
+def _fix_decimals(dataframe):
+    """
+    It's a must to pass the data before string conversion
+    :param dataframe:
+    :return:
+    """
+    columns = dataframe.columns
+    dataframe[columns[2]] = dataframe[columns[2]] \
+                              + "." \
+                              + dataframe[columns[3]]
+
+    dataframe[columns[3]] = dataframe[columns[4]] \
+                             + "." \
+                             + dataframe[columns[5]]
+
+
 def _create_dataframes(path):
     """
     Takes the CSV files (one for each sensor), converts them to dataframes,
@@ -44,10 +66,23 @@ def _create_dataframes(path):
             #removes the .csv extension
             sensor_name = filename[:-4]
             sensor_df = pd.read_csv(path + filename)
+            columns = sensor_df.columns
+
+            sensor_df = sensor_df.where(sensor_df[columns[2]] != "---")
+
+            sensor_df = sensor_df.drop(columns=["Comment"])
+            sensor_df = sensor_df.dropna()
+
+            _fix_decimals(sensor_df)
+
             # drops the unnecessary columns
-            sensor_df = sensor_df.drop(columns=["Comment", "Latitude", "Longitude",
-                                                "Sonda(m)", "Code"])
+            columns = sensor_df.columns
+            sensor_df = sensor_df.drop(columns = [columns[0], columns[4],
+                                                  columns[5], columns[6],
+                                                  columns[7]])
+
             sensor_df = _fix_time(sensor_df)
+            print(filename)
             sensor_df = _process_nan(sensor_df)
 
             #resamples the df to minute frequency

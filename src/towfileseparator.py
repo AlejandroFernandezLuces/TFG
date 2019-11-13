@@ -1,6 +1,7 @@
 import dataframemanager as dfm
 import filemanager as fm
 import math
+import matplotlib.pyplot as plt
 
 """
 Omellor este ficheiro deberia ir dentro de dataframemanager, porque fai 
@@ -48,9 +49,15 @@ def save_to_csv(path, filename, original_df, start_index, end_index):
     Saves the different tows from one file into one csv each
     :return:
     """
-    for i in range(len(end_index)):
-        df = original_df[start_index[i]:end_index[i]]
-        df.to_csv(path + str(filename) + "-" + str(i) + ".csv")
+    for i in range(len(end_index) - 1):
+
+        try:
+            df = original_df[start_index[i]:end_index[i]]
+            df.to_csv(path + str(filename) + "-" + str(i) + ".csv")
+        except:
+            print("Start index= " + str(
+                start_index[i - 1]) + " // End index = " + str(end_index[i - 1]))
+            print("list size = " + str(len(original_df)))
 
 
 def separate_tows(origin_path, saving_path):
@@ -69,21 +76,14 @@ def separate_tows(origin_path, saving_path):
     df_index = 0
 
     for unseparated_df in unseparated_df_list:
-        towing_data_only = unseparated_df.where\
-            (unseparated_df["Escalas(m)Estribor"] >
-             3*unseparated_df["Escalas(m)Estribor"].mean()/4)
+
+        #TODO: Mirar corte optimo para o limite entre lances
+        towing_data_only = unseparated_df.where(
+            unseparated_df["Escalas(m)Estribor"] >
+            unseparated_df["Escalas(m)Estribor"].mean()/2)
 
 
         start_index, end_index = limits_index(towing_data_only)
-        save_to_csv(saving_path, df_index, unseparated_df, start_index, end_index)
-
+        if len(unseparated_df_list) > 10:
+            save_to_csv(saving_path, df_index, unseparated_df, start_index, end_index)
         df_index += 1
-
-"""
-path = "/home/alex/Documents/Clase/TFG/Dataset/iskra/"
-saving_path =  "/home/alex/Documents/Clase/TFG/Dataset/csv_files/"
-
-fm.get_all_csv(path)
-
-separate_tows(path, saving_path)
-"""

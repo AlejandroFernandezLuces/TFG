@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import os
+import matplotlib.pyplot as plt
 
 def _process_nan(sensor_df):
     """
@@ -82,11 +83,17 @@ def _create_dataframes(path):
                                                   columns[7]])
 
             sensor_df = _fix_time(sensor_df)
-            print(filename)
             sensor_df = _process_nan(sensor_df)
 
             #resamples the df to minute frequency
-            sensor_df = sensor_df.resample("Min").mean()
+            sensor_df = sensor_df.resample("4Min").mean()
+            sensor_df = _process_nan(sensor_df) #necesario porque o resample deixa Nans
+            """
+            #Debugging de graficas antes de cortalas
+            plt.clf()
+            plt.plot(sensor_df["Escalas(m)"])
+            plt.pause(5)
+            plt.show()"""
             sensor_df = _rename_columns(sensor_df, sensor_name)
             sensor_df_list.append(sensor_df)
         return sensor_df_list

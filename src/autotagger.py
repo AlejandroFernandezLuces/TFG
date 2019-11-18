@@ -5,6 +5,8 @@ saving_path = "/home/alex/Documents/Clase/TFG/Dataset/csv_files_tagged/"
 filenames = os.listdir(saving_path)
 
 Y = []
+
+
 x = []
 for filename in filenames:
     dataframe = pd.read_csv(saving_path + filename)

@@ -1,7 +1,5 @@
-import dataframemanager as dfm
-import filemanager as fm
+from dataset_management import dataframemanager as dfm
 import math
-import matplotlib.pyplot as plt
 
 """
 Omellor este ficheiro deberia ir dentro de dataframemanager, porque fai 

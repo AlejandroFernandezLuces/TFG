@@ -1,10 +1,6 @@
 import matplotlib.pyplot as plt
 import os
 import pandas as pd
-from scipy import signal
-import towfileseparator
-import dataframemanager
-import filemanager
 
 path = "/home/alex/Documents/Clase/TFG/Dataset/iskra/"
 saving_path =  "/home/alex/Documents/Clase/TFG/Dataset/csv_files/"

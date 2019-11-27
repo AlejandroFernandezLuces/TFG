@@ -105,10 +105,14 @@ def _join_dataframes(sensor_df_list):
     :param sensor_df_list: List of dfs
     :return: joined list of dfs in one df
     """
-    join = sensor_df_list[0]
-    for i in range(1, len(sensor_df_list)):
-        join = join.join(sensor_df_list[i])
-    return join
+    if len(sensor_df_list) != 0:
+        join = sensor_df_list[0]
+        for i in range(1, len(sensor_df_list)):
+            join = join.join(sensor_df_list[i])
+        return join
+    else:
+        return pd.DataFrame(data=sensor_df_list, columns=[])
+
 
 def _fix_time(sensor_df):
     """

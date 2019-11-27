@@ -31,6 +31,9 @@ def limits_index(towing_data):
     nonnan_index = select_valid_index(towing_data)
     end_index = []
     start_index = []
+    print(nonnan_index)
+    if len(nonnan_index) == 0:
+        print(towing_data)
     start_index.append(nonnan_index[0])
     for i in range(1, len(nonnan_index) - 1):
         if nonnan_index[i] + 1 != nonnan_index[i + 1]:
@@ -38,6 +41,7 @@ def limits_index(towing_data):
         if nonnan_index[i] - 1 != nonnan_index[i - 1]:
             start_index.append(nonnan_index[i])
     end_index.append(nonnan_index[len(nonnan_index) - 1])
+
 
     return start_index, end_index
 
@@ -74,14 +78,12 @@ def separate_tows(origin_path, saving_path):
     df_index = 0
 
     for unseparated_df in unseparated_df_list:
-
-        #TODO: Mirar corte optimo para o limite entre lances
-        towing_data_only = unseparated_df.where(
-            unseparated_df["Escalas(m)Estribor"] >
-            unseparated_df["Escalas(m)Estribor"].mean()/2)
-
-
-        start_index, end_index = limits_index(towing_data_only)
-        if len(unseparated_df_list) > 10:
-            save_to_csv(saving_path, df_index, unseparated_df, start_index, end_index)
-        df_index += 1
+        if not unseparated_df.empty:
+            #TODO: Mirar corte optimo para o limite entre lances
+            towing_data_only = unseparated_df.where(
+                unseparated_df["Escalas(m)Estribor"] >
+                unseparated_df["Escalas(m)Estribor"].mean()/2)
+            start_index, end_index = limits_index(towing_data_only)
+            if len(unseparated_df_list) > 10:
+                save_to_csv(saving_path, df_index, unseparated_df, start_index, end_index)
+            df_index += 1

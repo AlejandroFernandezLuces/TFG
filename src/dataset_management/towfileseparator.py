@@ -7,7 +7,7 @@ operacions sobre os dataframes, ainda que sexan lixeiramente diferentes
 
 """
 
-def select_valid_index(towing_data):
+def select_valid_index(towing_data, full_data=True):
     """
     Selects the indexes where the data is not NaN
     :param towing_data: Dataset
@@ -15,8 +15,12 @@ def select_valid_index(towing_data):
     """
     i = 0
     nonnan_index = []
+    if full_data:
+        column_name = "Escalas(m)Estribor"
+    else:
+        column_name = "Escalas(m)"
     while i < len(towing_data):
-        if not math.isnan(towing_data["Escalas(m)Estribor"][i]):
+        if not math.isnan(towing_data[column_name][i]):
             nonnan_index.append(i)
         i += 1
     return nonnan_index
@@ -28,12 +32,12 @@ def limits_index(towing_data):
     :param nonnan_index: List with the indexes where data is valid
     :return:two lists, one with the start indexes, and one with the end indexes
     """
-    nonnan_index = select_valid_index(towing_data)
+    nonnan_index = select_valid_index(towing_data, False)
     end_index = []
     start_index = []
-    print(nonnan_index)
+    """print(nonnan_index)
     if len(nonnan_index) == 0:
-        print(towing_data)
+        print(towing_data)"""
     start_index.append(nonnan_index[0])
     for i in range(1, len(nonnan_index) - 1):
         if nonnan_index[i] + 1 != nonnan_index[i + 1]:
@@ -62,7 +66,7 @@ def save_to_csv(path, filename, original_df, start_index, end_index):
             print("list size = " + str(len(original_df)))
 
 
-def separate_tows(origin_path, saving_path):
+def separate_tows(origin_path, saving_path, full_data=True):
     """
     We may have several tows in one single file, so for the sake of processing
     and tagging, it is necessary to separate these tows into several CSV files.
@@ -73,16 +77,26 @@ def separate_tows(origin_path, saving_path):
     :param path: path to the dataset
     :return: CSV files
     """
-
-    unseparated_df_list = dfm.get_all_dataframes(origin_path)
+    if full_data:
+        unseparated_df_list = dfm.get_all_dataframes(origin_path)
+    else:
+        unseparated_df_list = dfm.get_aperture_only(origin_path)
     df_index = 0
 
     for unseparated_df in unseparated_df_list:
         if not unseparated_df.empty:
             #TODO: Mirar corte optimo para o limite entre lances
-            towing_data_only = unseparated_df.where(
-                unseparated_df["Escalas(m)Estribor"] >
-                unseparated_df["Escalas(m)Estribor"].mean()/2)
+            #Ademais, o nome pode ser tamen Abertura en vez de Estribor
+            print(unseparated_df.head())
+            if full_data:
+                towing_data_only = unseparated_df.where(
+                    unseparated_df["Escalas(m)Estribor"] >
+                    unseparated_df["Escalas(m)Estribor"].mean()/2)
+            else:
+                towing_data_only = unseparated_df.where(
+                    unseparated_df["Escalas(m)"] >
+                    unseparated_df["Escalas(m)"].mean()/2)
+
             start_index, end_index = limits_index(towing_data_only)
             if len(unseparated_df_list) > 10:
                 save_to_csv(saving_path, df_index, unseparated_df, start_index, end_index)

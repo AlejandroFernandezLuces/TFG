@@ -91,7 +91,7 @@ def separate_tows(origin_path, saving_path, full_data=True):
             if full_data:
                 towing_data_only = unseparated_df.where(
                     unseparated_df["Escalas(m)Estribor"] >
-                    unseparated_df["Escalas(m)Estribor"].mean()/2)
+                    unseparated_df["Escalas(m)Estribor"].mean()/5)
             else:
                 towing_data_only = unseparated_df.where(
                     unseparated_df["Escalas(m)"] >

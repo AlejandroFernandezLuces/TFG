@@ -55,13 +55,11 @@ def _fix_decimals(dataframe):
 
 
 def _process_df(sensor_df, resample=True):
+
     columns = sensor_df.columns
-
     sensor_df = sensor_df.where(sensor_df[columns[2]] != "---")
-
     sensor_df = sensor_df.drop(columns=["Comment"])
     sensor_df = sensor_df.dropna()
-
     _fix_decimals(sensor_df)
 
     # drops the unnecessary columns
@@ -167,7 +165,9 @@ def get_all_dataframes(path):
             dataframe_list.append(get_dataframe(path + filename + "/"))
     return dataframe_list
 
+
 def get_aperture_only(path):
+
     dataframe_list = []
     directory_names = os.listdir(path)
     for directory in directory_names:

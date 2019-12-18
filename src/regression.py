@@ -1,56 +1,39 @@
-import pandas as pd
-import os
 from sklearn.model_selection import train_test_split
-#import required packages
-from sklearn import neighbors
-from sklearn.metrics import mean_squared_error
-from math import sqrt
-import matplotlib.pyplot as plt
+from models import randomforest, supportvectorregression as svr, \
+    linearregression
+from utils import windowroll, dfopener, scaler
+
+
 
 df_path = "/home/alex/Documents/Clase/TFG/Dataset/csv_files_apertura/"
+dfs = dfopener._df_opener(df_path, min_sensor_reads=50)
 
-def _df_opener(path):
-    directory = os.listdir(path)
-    df_list = []
-    for file in directory:
-        df = pd.read_csv(path + file)
-        if df.shape[0] > 20:
-            df_list.append(df)
-    return df_list
+scaled_dfs = scaler.fit_scale(dfs)
+train, test = train_test_split(scaled_dfs, test_size=0.4, random_state=42)
 
 
-def _window(df, window_size = 20, prediction_range = 1):
-    window_list = []
-    y_list = []
-    df_size = df.shape[0]
-    if df_size > window_size + prediction_range:
-        df = df.drop(["Tiempo"], axis=1)
-        for i in range(df.shape[0] - prediction_range):
-            window = df[i:i + window_size]
-            y = df.iloc[window_size + prediction_range]
-            window_list.append(window)
-            y_list.append(y)
-    return window_list, y_list
+rfr_rmse = []
+lr_rmse = []
+svr_rmse = []
 
+#hiperparametrizacion
+print("--------ADESTRAMENTO DE ALGORITMOS---------\n")
+for gap in range(0, 50, 5):
+    print("\n\n\n---Distancia de predicion => " + str(gap))
+    X_train, y_train = windowroll.map_window(train, gap=gap)
+    X_test, y_test = windowroll.map_window(test, gap=gap)
 
-window_list = []
-y_list = []
-for elem in _df_opener(df_path):
-    window, y = _window(elem)
-    window_list.append(window)
-    y_list.append(y)
+    print("\n\nErros para RandomForest ->\n")
+    for i in  range(100, 250, 50):
+        rfr_rmse.append(
+            randomforest.fit_predict_rfr(
+                X_train,y_train, X_test, y_test, i))
 
+    print("\n\nErros para linear regression ->\n")
+    lr_rmse.append(
+        linearregression.fit_predict_lr(X_train, y_train, X_test, y_test))
 
-X_train, X_test, y_train, y_test = train_test_split(
-    window_list, y_list, test_size=0.33, random_state=42)
-
-rmse_val = [] #to store rmse values for different k
-for K in range(19,20):
-    K = K+1
-    model = neighbors.KNeighborsRegressor(n_neighbors = K)
-    print("First iteration")
-    model.fit(X_train, y_train)  #fit the model
-    pred=model.predict(X_test) #make prediction on test set
-    error = sqrt(mean_squared_error(y_test,pred)) #calculate rmse
-    rmse_val.append(error) #store rmse values
-    print('RMSE value for k= ' , K , 'is:', error)
+    print("\n\nErros para SVR ---->\n")
+    svr_rmse.append(
+        svr.fit_predict_lr(X_train,y_train, X_test, y_test, )
+    )

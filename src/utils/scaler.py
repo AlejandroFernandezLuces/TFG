@@ -9,4 +9,4 @@ def fit_scale(dfs):
     for elem in dfs:
         df = scaler.transform(elem)
         scaled_dfs.append(df)
-    return scaler, scaled_dfs
+    return scaled_dfs, scaler

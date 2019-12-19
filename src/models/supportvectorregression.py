@@ -8,5 +8,9 @@ def fit_predict_lr(X_train, y_train, X_test, y_test, kernel="rbf",
     model.fit(X=X_train, y=y_train)
     pred = model.predict(X_test)  # make prediction on test set
     error = sqrt(mean_squared_error(y_test, pred))  # calculate rmse
-    print("SVR---> RMSE value is:", error)
+    print("SVR--->Kernel = "+ kernel )
+    print("Degree = " + str(degree))
+    print("Coefficient = " + str(coeficient))
+    print("Epsilon = " + str(epsilon))
+    print("RMSE value is:" + str(error) + "\n")
     return error

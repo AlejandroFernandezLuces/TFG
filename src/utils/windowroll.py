@@ -18,7 +18,7 @@ def _window(df, window_size=20, gap=0):
         return [], []
 
 
-def _map_window(dfs, window_size=20, gap=0):
+def map_window(dfs, window_size=20, gap=0):
     X_list = []
     y_list = []
     for elem in dfs:

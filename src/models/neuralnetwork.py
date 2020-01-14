@@ -9,7 +9,7 @@ def complex_model(input_shape):
     model = Sequential()
     #model.add(Dense(2, input_dim=40, activation="softmax"))
 
-    model.add(Embedding(input_shape[0], 1, input_length=40))
+    model.add(Embedding(input_shape[1], 1, input_length=40))
     model.add(Conv1D(32, kernel_size=3, padding="same", activation="relu"))
     model.add(MaxPool1D(pool_size=3))
     model.add(Conv1D(32, kernel_size=3, padding="same", activation="relu"))
@@ -26,7 +26,7 @@ def complex_model(input_shape):
 
 def simple_model(input_shape):
     model = Sequential()
-    model.add(Dense(2, input_dim=input_shape[0], activation="softmax"))
+    model.add(Dense(2, input_dim=input_shape[1], activation="softmax"))
     model.add(Dense(8, activation="relu"))
     model.add(Dense(1, activation="relu"))
     model.compile(loss='binary_crossentropy', optimizer='adam',

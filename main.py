@@ -1,6 +1,6 @@
 from sklearn.model_selection import train_test_split
 from src.models import randomforest, supportvectorregression as svr, \
-    linearregression, neuralnetwork
+    linearregression, neuralnetwork, sarimax
 from src.utils import windowroll, dfopener, scaler
 import numpy as np
 
@@ -9,7 +9,7 @@ df_path = "Dataset/csv_files_apertura/"
 dfs = dfopener.df_opener(df_path, min_sensor_reads=50)
 
 scaled_dfs, df_scaler = scaler.fit_scale(dfs)
-train, test = train_test_split(scaled_dfs, test_size=0.4, random_state=42)
+train, test = train_test_split(scaled_dfs, test_size=0.95, random_state=42)
 
 error_list = []
 gap_dict = {}
@@ -34,10 +34,10 @@ for gap in range(0, 50, 5):
         X_train, y_train, X_test, y_test)
     error_dict[error_lr] = ["OLS"]
 
-    print("\n\nErros para rede neuronal ->\n")
-    error_nn = neuralnetwork.nn_fit(X_train, y_train, X_test, y_test)
+    """print("\n\nErros para rede neuronal ->\n")
+    error_nn = neuralnetwork.fit_predict_nn(X_train, y_train, X_test, y_test)
     error_dict[error_nn] = ["NN"]
-    """print("\n\nErros para SVR ---->\n")
+    print("\n\nErros para SVR ---->\n")
     for kernel in kernels:
         for degree in range(2, 6):
             for coefficient in range(1,5):
@@ -47,4 +47,10 @@ for gap in range(0, 50, 5):
                         kernel, degree, coefficient, epsilon)
                     error_dict[error_svr] = \
                         ["SVR", kernel, degree, coefficient, epsilon]"""
+
+    print("\n\nErros para ARIMA ->\n")
+    error_arima = sarimax.fit_predict_arima(
+        X_train, y_train, X_test, y_test)
+    error_dict[error_arima] = ["arima"]
+
     gap_dict[gap] = error_dict

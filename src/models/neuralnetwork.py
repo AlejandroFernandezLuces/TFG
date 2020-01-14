@@ -33,7 +33,7 @@ def simple_model(input_shape):
                   metrics=['accuracy'])
     return model
 
-def nn_fit(X_train, y_train, X_test, y_test, use_model="simple"):
+def fit_predict_nn(X_train, y_train, X_test, y_test, use_model="simple"):
     X_train = np.array(X_train)
     if use_model == "simple":
         model = simple_model(X_train.shape)

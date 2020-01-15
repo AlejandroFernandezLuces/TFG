@@ -87,7 +87,7 @@ for gap in range(0, 50, 5):
                                            "degree":[degree],
                                            "coefficient":[coefficient],
                                            "epsilon":[epsilon]})
-                    df_rna = df_rna.append(df_aux)
+                    df_svr = df_svr.append(df_aux)
     result_list = [df_lr, df_rfr, df_rna, df_svr]
 
     file = open("Results/pickled_results", "wb")

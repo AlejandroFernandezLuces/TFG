@@ -1,6 +1,6 @@
 from sklearn.model_selection import train_test_split
 from src.models import randomforest, supportvectorregression as svr, \
-    linearregression, neuralnetwork, sarimax
+    linearregression, neuralnetwork
 from src.utils import windowroll, dfopener, scaler
 import numpy as np
 import pandas as pd
@@ -19,24 +19,27 @@ kernels = ["rbf", "linear", "poly"]
 
 # hiperparametrizacion
 print("--------ADESTRAMENTO DE ALGORITMOS---------\n")
-df_rfr = pd.DataFrame(columns=["error",
+df_rfr = pd.DataFrame(columns=["algorithm",
+                               "error",
                                "gap",
                                "nEstimators"])
 
-df_lr = pd.DataFrame(columns=["error",
+df_lr = pd.DataFrame(columns=["algorithm",
+                              "error",
                               "gap"])
 
-df_rna = pd.DataFrame(columns=["error",
+df_rna = pd.DataFrame(columns=["algorithm",
+                               "error",
                                "gap",
                                "model"])
 
-df_svr = pd.DataFrame(columns=["error",
+df_svr = pd.DataFrame(columns=["algorithm",
+                               "error",
                                "gap",
                                "kernel",
                                "degree",
                                "coefficient",
                                "epsilon"])
-
 
 for gap in range(0, 50, 5):
     error_dict = {}
@@ -47,7 +50,8 @@ for gap in range(0, 50, 5):
     print("\n\nErros para linear regression ->\n")
     error_lr = linearregression.fit_predict_lr(
         X_train, y_train, X_test, y_test)
-    df_aux = pd.DataFrame({"error": [error_lr],
+    df_aux = pd.DataFrame({"algorithm": "lr",
+                           "error": [error_lr],
                            "gap": [gap]})
     df_lr = df_lr.append(df_aux)
 
@@ -56,7 +60,8 @@ for gap in range(0, 50, 5):
     for n_estimators in  range(100, 250, 50):
         error_rfr = randomforest.fit_predict_rfr(
             X_train,y_train, X_test, y_test, n_estimators)
-        df_aux = pd.DataFrame({"error":[error_rfr],
+        df_aux = pd.DataFrame({"algorithm":"rfr",
+                               "error":[error_rfr],
                                "gap":[gap],
                                "nEstimators": [n_estimators]})
         df_rfr = df_rfr.append(df_aux)
@@ -64,11 +69,13 @@ for gap in range(0, 50, 5):
     print("\n\nErros para rede neuronal ->\n")
     error_nn_sim = neuralnetwork.fit_predict_nn(X_train, y_train, X_test, y_test)
     error_nn_com = neuralnetwork.fit_predict_nn(X_train, y_train, X_test, y_test, use_model="complex")
-    df_aux = pd.DataFrame({"error": [error_nn_sim],
+    df_aux = pd.DataFrame({"algorithm":"rna",
+                           "error": [error_nn_sim],
                            "gap": [gap],
                            "model": ["simple"]})
     df_rna = df_rna.append(df_aux)
-    df_aux = pd.DataFrame({"error": [error_nn_com],
+    df_aux = pd.DataFrame({"algorithm":"rna",
+                           "error": [error_nn_com],
                            "gap": [gap],
                            "model": ["complex"]})
     df_rna = df_rna.append(df_aux)
@@ -81,13 +88,15 @@ for gap in range(0, 50, 5):
                     error_svr =  svr.fit_predict_svr(
                     X_train,y_train, X_test, y_test,
                     kernel, degree, coefficient, epsilon)
-                    df_aux = pd.DataFrame({"error": [error_nn_sim], 
+                    df_aux = pd.DataFrame({"algorithm": "svr",
+                                           "error": [error_nn_sim],
                                            "gap": [gap],
                                            "kernel":[kernel],
                                            "degree":[degree],
                                            "coefficient":[coefficient],
                                            "epsilon":[epsilon]})
                     df_svr = df_svr.append(df_aux)
+    print("<<<<<<<< End of battery training >>>>>>>>>>>>>")
     result_list = [df_lr, df_rfr, df_rna, df_svr]
 
     file = open("Results/pickled_results", "wb")

@@ -89,21 +89,16 @@ for gap in range(0, 50, 5):
     df_rna = df_rna.append(df_aux)"""
     
     print("\n\nErros para SVR ---->\n")
-    for kernel in kernels:
-        for degree in range(2, 6):
-            for coefficient in range(1,5):
-                for epsilon in np.arange(0.1, 1.5, 0.2):
-                    error_svr =  svr.fit_predict_svr(
-                    X_train,y_train, X_test, y_test,
-                    kernel, degree, coefficient, epsilon)
-                    df_aux = pd.DataFrame({"algorithm": "svr",
-                                           "error": [error_nn_sim],
-                                           "gap": [gap],
-                                           "kernel":[kernel],
-                                           "degree":[degree],
-                                           "coefficient":[coefficient],
-                                           "epsilon":[epsilon]})
-                    df_svr = df_svr.append(df_aux)
+
+    error_svr, params_svr =  svr.fit_predict_svr(
+    X_train,y_train, X_test, y_test,
+    kernel, degree, coefficient, epsilon)
+    df_aux = pd.DataFrame({"algorithm": "svr",
+                           "error": [error_svr],
+                           "gap": [gap],
+                           "params":[params_svr]})
+
+    df_svr = df_svr.append(df_aux)
     print("<<<<<<<< End of battery training >>>>>>>>>>>>>")
     result_list = [df_lr, df_rfr, df_rna, df_svr]
 

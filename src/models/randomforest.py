@@ -3,6 +3,10 @@ from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import GridSearchCV
 from math import sqrt
 
+
+"""
+Random forest impl
+"""
 def fit_predict_rfr(X_train, y_train, X_test, y_test, estimators=100):
     model = RandomForestRegressor(n_estimators=estimators,
                                   warm_start=True,

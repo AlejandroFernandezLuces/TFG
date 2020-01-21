@@ -32,7 +32,7 @@ def fit_predict_rfr(X_train, y_train, X_test, y_test, estimators=100):
                'min_samples_leaf': min_samples_leaf,
                'bootstrap': bootstrap}
 
-    gs = GridSearchCV(RandomForestRegressor(), grid, verbose=5, n_jobs=-1)
+    gs = GridSearchCV(RandomForestRegressor(), grid, verbose=5, n_jobs=-1   )
     gs.fit(X=X_train, y=y_train)
     model = gs.best_estimator_.predict(X_test)
     pred = model.predict(X_test)  # make prediction on test set

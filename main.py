@@ -1,7 +1,7 @@
 from sklearn.model_selection import train_test_split, GridSearchCV
 from src.models import randomforest, supportvectorregression as svr, \
-    linearregression, neuralnetwork
-from src.utils import windowroll, dfopener, scaler
+    linearregression, neuralnetwork, sarimax
+from src.utils import windowroll, dfopener, scaler, arima_data_manager
 import numpy as np
 import pandas as pd
 import pickle
@@ -51,6 +51,11 @@ empregando unicamente a sua correspondente xanela. Escollense diversos puntos
 de prediccion. O ideal seria unha aproximacion logaritmica no canto de 
 aritmetica.(1, 2, 4, 8....)"""
 
+
+"""print("\n\n-------------------------------------------")
+print(">>>>>>>>>>>>> APROXIMACION 1 <<<<<<<<<<<<<")
+print("-------------------------------------------\n\n")
+
 for gap in range(0, 50, 5):
     error_dict = {}
     print("\n\n\n---Distancia de predicion => " + str(gap))
@@ -87,6 +92,16 @@ for gap in range(0, 50, 5):
     print("<<<<<<<< End of battery training >>>>>>>>>>>>>")
     result_list = [df_lr, df_rfr, df_rna, df_svr]
 
-    file = open("Results/pickled_results", "wb")
+    file = open("Results/pickled_results_aprox1", "wb")
     pickle.dump(result_list, file)
-    file.close()
+    file.close()"""
+
+print("\n\n-------------------------------------------")
+print(">>>>>>>>>>>>> APROXIMACION 2 <<<<<<<<<<<<<")
+print("-------------------------------------------\n\n")
+
+for gap in range(0, 50, 5):
+    print("\n\n\n---Distancia de predicion => " + str(gap))
+    endog_train, exog_train = arima_data_manager.train_data(train)
+    endog_test, exog_test = arima_data_manager.test_data(test)
+    sarimax.fit_predict_arima(endog_train, exog_train, endog_test, exog_test)

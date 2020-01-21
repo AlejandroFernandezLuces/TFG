@@ -5,6 +5,8 @@ import numpy as np
 from sklearn.model_selection import RandomizedSearchCV
 from sklearn.model_selection import GridSearchCV
 
+
+"""regression model for svr"""
 def fit_predict_svr(X_train, y_train, X_test, y_test):
     kernels = ["rbf", "linear", "poly"]
 

@@ -73,26 +73,11 @@ for gap in range(0, 50, 5):
                            "gap":[gap],
                            "params": [rfr_params]})
     df_rfr = df_rfr.append(df_aux)
-
-    """print("\n\nErros para rede neuronal ->\n")
-    error_nn_sim = neuralnetwork.fit_predict_nn(X_train, y_train, X_test, y_test)
-    error_nn_com = neuralnetwork.fit_predict_nn(X_train, y_train, X_test, y_test, use_model="complex")
-    df_aux = pd.DataFrame({"algorithm":"rna",
-                           "error": [error_nn_sim],
-                           "gap": [gap],
-                           "model": ["simple"]})
-    df_rna = df_rna.append(df_aux)
-    df_aux = pd.DataFrame({"algorithm":"rna",
-                           "error": [error_nn_com],
-                           "gap": [gap],
-                           "model": ["complex"]})
-    df_rna = df_rna.append(df_aux)"""
     
     print("\n\nErros para SVR ---->\n")
 
     error_svr, params_svr =  svr.fit_predict_svr(
-    X_train,y_train, X_test, y_test,
-    kernel, degree, coefficient, epsilon)
+    X_train,y_train, X_test, y_test)
     df_aux = pd.DataFrame({"algorithm": "svr",
                            "error": [error_svr],
                            "gap": [gap],

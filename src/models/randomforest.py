@@ -1,5 +1,6 @@
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
+from sklearn.model_selection import GridSearchCV
 from math import sqrt
 
 def fit_predict_rfr(X_train, y_train, X_test, y_test, estimators=100):

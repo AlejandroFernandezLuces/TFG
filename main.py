@@ -1,4 +1,4 @@
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, GridSearchCV
 from src.models import randomforest, supportvectorregression as svr, \
     linearregression, neuralnetwork
 from src.utils import windowroll, dfopener, scaler
@@ -11,7 +11,7 @@ df_path = "Dataset/csv_files_apertura/"
 dfs = dfopener.df_opener(df_path, min_sensor_reads=50)
 
 scaled_dfs, df_scaler = scaler.fit_scale(dfs)
-train, test = train_test_split(scaled_dfs, test_size=0.95, random_state=42)
+train, test = train_test_split(scaled_dfs, test_size=0.3, random_state=42)
 
 error_list = []
 gap_dict = {}
@@ -40,6 +40,16 @@ df_svr = pd.DataFrame(columns=["algorithm",
                                "degree",
                                "coefficient",
                                "epsilon"])
+
+
+"""---------- Primeira aproximacion -------------------
+
+Emprega o xanelado para obter o punto de predicion. A entrada sera un anaco
+do sinal de tamaño fixo. Esta xanela irase movendo ao longo do sinal ata 
+completala. A saida e un punto posterior a esta xanela, o cal se predi 
+empregando unicamente a sua correspondente xanela. Escollense diversos puntos
+de prediccion. O ideal seria unha aproximacion logaritmica no canto de 
+aritmetica.(1, 2, 4, 8....)"""
 
 for gap in range(0, 50, 5):
     error_dict = {}

@@ -1,0 +1,26 @@
+openapi: 3.0.0
+info:
+  title: Aperture API
+  description:  Simple API for tow signal prediction.
+
+paths:
+  /users:
+    get:
+      summary: Returns a JSON with the list of the users.
+      responses:
+        "200":
+        "404":
+        "400":
+  /users/{idUser}:
+    get:
+      summary: Retrieves the user info
+      description: Returns a JSON with the username, data uploaded by a user and the date it was uploaded
+    post:
+      summary: Creates a new user
+  /users/{idUser}/towdata:
+    get:
+      summary: Retrives info for representation in the client
+    post:
+      summary: Uploads historic data for representation and prediction
+    put:
+      summary: Updates data for prediction in real time

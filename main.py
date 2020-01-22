@@ -28,11 +28,6 @@ df_lr = pd.DataFrame(columns=["algorithm",
                               "error",
                               "gap"])
 
-df_rna = pd.DataFrame(columns=["algorithm",
-                               "error",
-                               "gap",
-                               "model"])
-
 df_svr = pd.DataFrame(columns=["algorithm",
                                "error",
                                "gap",
@@ -52,7 +47,7 @@ de prediccion. O ideal seria unha aproximacion logaritmica no canto de
 aritmetica.(1, 2, 4, 8....)"""
 
 
-"""print("\n\n-------------------------------------------")
+print("\n\n-------------------------------------------")
 print(">>>>>>>>>>>>> APROXIMACION 1 <<<<<<<<<<<<<")
 print("-------------------------------------------\n\n")
 
@@ -90,13 +85,13 @@ for gap in range(0, 50, 5):
 
     df_svr = df_svr.append(df_aux)
     print("<<<<<<<< End of battery training >>>>>>>>>>>>>")
-    result_list = [df_lr, df_rfr, df_rna, df_svr]
+    result_list = [df_lr, df_rfr, df_svr]
 
     file = open("Results/pickled_results_aprox1", "wb")
     pickle.dump(result_list, file)
-    file.close()"""
+    file.close()
 
-print("\n\n-------------------------------------------")
+"""print("\n\n-------------------------------------------")
 print(">>>>>>>>>>>>> APROXIMACION 2 <<<<<<<<<<<<<")
 print("-------------------------------------------\n\n")
 
@@ -104,4 +99,4 @@ for gap in range(0, 50, 5):
     print("\n\n\n---Distancia de predicion => " + str(gap))
     endog_train, exog_train = arima_data_manager.train_data(train)
     endog_test, exog_test = arima_data_manager.test_data(test)
-    sarimax.fit_predict_arima(endog_train, exog_train, endog_test, exog_test)
+    sarimax.fit_predict_arima(endog_train, exog_train, endog_test, exog_test)"""

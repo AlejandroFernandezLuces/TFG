@@ -9,6 +9,10 @@ from sklearn.model_selection import GridSearchCV
 """
 Random forest impl
 """
+
+def predict_rfr(model, X_test):
+    return model.predict(X_test)
+
 def fit_predict_rfr(X_train, y_train, X_test, y_test, estimators=100):
 
     # Number of trees in random forest
@@ -32,9 +36,11 @@ def fit_predict_rfr(X_train, y_train, X_test, y_test, estimators=100):
                'min_samples_leaf': min_samples_leaf,
                'bootstrap': bootstrap}
 
-    gs = GridSearchCV(RandomForestRegressor(), grid, verbose=5, n_jobs=-1   )
+    grid2 = {}
+    gs = GridSearchCV(RandomForestRegressor(), grid2, verbose=5, n_jobs=-1   )
     gs.fit(X=X_train, y=y_train)
-    model = gs.best_estimator_.predict(X_test)
-    pred = model.predict(X_test)  # make prediction on test set
+    model = gs.best_estimator_
+    pred = gs.best_estimator_.predict(X_test)
+    #pred = model.predict(X_test)  # make prediction on test set
     error = sqrt(mean_squared_error(y_test, pred))  # calculate rmse
-    return error, gs.best_params_
+    return error, gs.best_params_, model

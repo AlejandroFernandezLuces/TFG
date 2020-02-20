@@ -20,7 +20,7 @@ def _process_nan(sensor_df):
     sensor_df = sensor_df.astype(float)
 
     sensor_df = sensor_df.replace(-1, np.NAN)
-    sensor_df = sensor_df.interpolate()  # reconstrue os NAN's, pero e bo mirar un analisis mellor
+    #sensor_df = sensor_df.interpolate()  # reconstrue os NAN's, pero e bo mirar un analisis mellor
     return sensor_df
 
 def _rename_columns(sensor_df, sensor_name):
@@ -54,6 +54,14 @@ def _fix_decimals(dataframe):
                              + dataframe[columns[5]]
 
 
+
+def _interpolate(sensor_df):
+    # resamples the df to minute frequency
+    sensor_df = sensor_df.resample("30S").mean()
+    sensor_df = sensor_df.interpolate(method="linear", limit=5)
+    #sensor_df = _process_nan(sensor_df)  # necesario porque o resample deixa Nans
+    return sensor_df
+
 def _process_df(sensor_df, resample=True):
 
     columns = sensor_df.columns
@@ -71,16 +79,16 @@ def _process_df(sensor_df, resample=True):
     sensor_df = _fix_time(sensor_df)
     sensor_df = _process_nan(sensor_df)
 
-    if resample:
+    #if resample:
         # resamples the df to minute frequency
-        sensor_df = sensor_df.resample("4Min").mean()
-        sensor_df = _process_nan(sensor_df)  # necesario porque o resample deixa Nans
-        """
-        #Debugging de graficas antes de cortalas
-        plt.clf()
-        plt.plot(sensor_df["Escalas(m)"])
-        plt.pause(5)
-        plt.show()"""
+    sensor_df = sensor_df.resample("30S").mean()
+    sensor_df = sensor_df.interpolate(method="linear")
+    sensor_df = _process_nan(sensor_df)
+    #Debugging de graficas antes de cortalas
+    """plt.clf()
+    plt.plot(sensor_df["Escalas(m)"])
+    plt.pause(2)
+    plt.show()"""
     return sensor_df
 
 def _create_dataframes(path):
@@ -161,13 +169,13 @@ def get_all_dataframes(path):
     filenames = os.listdir(path)
     dataframe_list = []
     for filename in filenames:
+        print(path + filename)
         if os.path.isdir(path + filename):
             dataframe_list.append(get_dataframe(path + filename + "/"))
     return dataframe_list
 
 
 def get_aperture_only(path):
-
     dataframe_list = []
     directory_names = os.listdir(path)
     for directory in directory_names:
@@ -176,10 +184,12 @@ def get_aperture_only(path):
             filenames = os.listdir(subpath)
             for filename in filenames:
                 if (filename == "Abertura.csv") and ("abdera" in directory):
+                    print(subpath + filename)
                     df = pd.read_csv(subpath + filename)
                     df = _process_df(df, False)
                     dataframe_list.append(df)
                 elif filename == "Estribor.csv":
+                    print(subpath + filename)
                     df = pd.read_csv(subpath + filename)
                     df = _process_df(df, False)
                     dataframe_list.append(df)

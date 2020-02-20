@@ -20,9 +20,13 @@ def select_valid_index(towing_data, full_data=True):
     else:
         column_name = "Escalas(m)"
     while i < len(towing_data):
-        if not math.isnan(towing_data[column_name][i]):
-            nonnan_index.append(i)
-        i += 1
+        try:
+            if not math.isnan(towing_data[column_name][i]):
+                nonnan_index.append(i)
+            i += 1
+        except:
+            i += 1
+            continue
     return nonnan_index
 
 
@@ -32,19 +36,18 @@ def limits_index(towing_data):
     :param nonnan_index: List with the indexes where data is valid
     :return:two lists, one with the start indexes, and one with the end indexes
     """
+
     nonnan_index = select_valid_index(towing_data, False)
     end_index = []
     start_index = []
-    """print(nonnan_index)
-    if len(nonnan_index) == 0:
-        print(towing_data)"""
-    start_index.append(nonnan_index[0])
-    for i in range(1, len(nonnan_index) - 1):
-        if nonnan_index[i] + 1 != nonnan_index[i + 1]:
-            end_index.append(nonnan_index[i])
-        if nonnan_index[i] - 1 != nonnan_index[i - 1]:
-            start_index.append(nonnan_index[i])
-    end_index.append(nonnan_index[len(nonnan_index) - 1])
+    if len(nonnan_index) != 0:
+        start_index.append(nonnan_index[0])
+        for i in range(1, len(nonnan_index) - 1):
+            if nonnan_index[i] + 1 != nonnan_index[i + 1]:
+                end_index.append(nonnan_index[i])
+            if nonnan_index[i] - 1 != nonnan_index[i - 1]:
+                start_index.append(nonnan_index[i])
+        end_index.append(nonnan_index[len(nonnan_index) - 1])
 
 
     return start_index, end_index
@@ -59,14 +62,15 @@ def save_to_csv(path, filename, original_df, start_index, end_index):
 
         try:
             df = original_df[start_index[i]:end_index[i]]
-            df.to_csv(path + str(filename) + "-" + str(i) + ".csv")
+            if df.__len__() > 0:
+                df.to_csv(path + str(filename) + "-" + str(i) + ".csv")
         except:
             print("Start index= " + str(
                 start_index[i - 1]) + " // End index = " + str(end_index[i - 1]))
             print("list size = " + str(len(original_df)))
 
 
-def separate_tows(origin_path, saving_path, full_data=True):
+def separate_tows(origin_path, saving_path, full_data=False):
     """
     We may have several tows in one single file, so for the sake of processing
     and tagging, it is necessary to separate these tows into several CSV files.
@@ -87,11 +91,10 @@ def separate_tows(origin_path, saving_path, full_data=True):
         if not unseparated_df.empty:
             #TODO: Mirar corte optimo para o limite entre lances
             #Ademais, o nome pode ser tamen Abertura en vez de Estribor
-            print(unseparated_df.head())
             if full_data:
                 towing_data_only = unseparated_df.where(
                     unseparated_df["Escalas(m)Estribor"] >
-                    unseparated_df["Escalas(m)Estribor"].mean()/5)
+                    unseparated_df["Escalas(m)Estribor"].mean()/2)
             else:
                 towing_data_only = unseparated_df.where(
                     unseparated_df["Escalas(m)"] >

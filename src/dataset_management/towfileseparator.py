@@ -1,6 +1,6 @@
 from dataset_management import dataframemanager as dfm
 import math
-
+import matplotlib.pyplot as plt
 """
 Omellor este ficheiro deberia ir dentro de dataframemanager, porque fai 
 operacions sobre os dataframes, ainda que sexan lixeiramente diferentes
@@ -62,7 +62,12 @@ def save_to_csv(path, filename, original_df, start_index, end_index):
 
         try:
             df = original_df[start_index[i]:end_index[i]]
-            if df.__len__() > 0:
+            if df.__len__() > 0 and end_index[i] - start_index[i] > 150:
+                df = df.interpolate()
+                """plt.clf()
+                plt.plot(df["Escalas(m)"])
+                plt.pause(2)
+                plt.show()"""
                 df.to_csv(path + str(filename) + "-" + str(i) + ".csv")
         except:
             print("Start index= " + str(
@@ -91,16 +96,27 @@ def separate_tows(origin_path, saving_path, full_data=False):
         if not unseparated_df.empty:
             #TODO: Mirar corte optimo para o limite entre lances
             #Ademais, o nome pode ser tamen Abertura en vez de Estribor
+
             if full_data:
                 towing_data_only = unseparated_df.where(
-                    unseparated_df["Escalas(m)Estribor"] >
-                    unseparated_df["Escalas(m)Estribor"].mean()/2)
+                    unseparated_df["Escalas(m)Estribor"].mean() / 2 <
+                    unseparated_df["Escalas(m)Estribor"] <
+                    unseparated_df["Escalas(m)Estribor"].mean() * 2)
             else:
                 towing_data_only = unseparated_df.where(
-                    unseparated_df["Escalas(m)"] >
-                    unseparated_df["Escalas(m)"].mean()/2)
+                     unseparated_df["Escalas(m)"] >
+                     unseparated_df["Escalas(m)"].mean()*4/5
+                )
+                towing_data_only = unseparated_df.where(
+                     towing_data_only["Escalas(m)"] <
+                     towing_data_only["Escalas(m)"].mean() * 1.25
+                )
 
             start_index, end_index = limits_index(towing_data_only)
-            if len(unseparated_df_list) > 10:
+            if len(towing_data_only["Escalas(m)"]) > 50:
+                """plt.clf()
+                plt.plot(towing_data_only["Escalas(m)"])
+                plt.pause(2)
+                plt.show()"""
                 save_to_csv(saving_path, df_index, unseparated_df, start_index, end_index)
             df_index += 1

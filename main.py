@@ -1,5 +1,5 @@
 from sklearn.model_selection import train_test_split
-from dataset_management import dataframemanager, towfileseparator
+from dataset_management import dataframemanager, towfileseparator, filemanager
 from src.models import randomforest, supportvectorregression as svr, \
     linearregression, sarimax
 from src.utils import windowroll, dfopener, scaler, arima_data_manager, graphs
@@ -14,7 +14,8 @@ from itertools import cycle
 
 raw_data = "Dataset/iskra/"
 df_path = "Dataset/test/"
-#towfileseparator.separate_tows("Dataset/iskra/", "Dataset/test/")
+#filemanager.get_all_csv(raw_data)
+#towfileseparator.separate_tows(raw_data, "Dataset/test/")
 dfs = dfopener.df_opener(df_path, min_sensor_reads=50)
 dfs_unscaled = []
 for elem in dfs:
@@ -23,8 +24,8 @@ for elem in dfs:
             dfs_unscaled.append(elem.to_numpy())
 scaled_dfs, df_scaler = scaler.fit_scale(dfs_unscaled)
 train, test = train_test_split(dfs_unscaled, test_size=0.9, random_state=42)
-test = test[50:60]
-plt.plot(test[0].transpose()[1], "ro")
+test = np.array(test[50:52])
+plt.plot(test.transpose()[1])
 
 
 error_list = []
@@ -80,8 +81,8 @@ gap_list = []
 
 for gap in exp_list:
     print("\n\n\n---Distancia de predicion => " + str(gap))
-    X_train, y_train = windowroll.map_window(train,window_size=200, gap=gap)
-    X_test, y_test = windowroll.map_window(test,window_size=200, gap=gap)
+    X_train, y_train = windowroll.map_window(train,window_size=30, gap=gap)
+    X_test, y_test = windowroll.map_window(test,window_size=30, gap=gap)
 
 
     print("\n\nErros para linear regression ->\n")
@@ -96,9 +97,9 @@ for gap in exp_list:
     #y_test_list.append(y_test)
     #gap_list.append(pred)
     gap_dict[gap] = pred
-    #y_dict[gap] = y_test
+    y_dict[gap] = y_test
 
-graphs.print_gap_comparison(y_test, gap_dict, exp_list, save=False)
+graphs.print_gap_comparison(y_dict[1], gap_dict, exp_list, save=False)
 
 """
 print("\n\nErros para RandomForest ->\n")

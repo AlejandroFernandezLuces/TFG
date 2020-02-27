@@ -4,7 +4,6 @@ import os
 
 def column_selector(df):
     df = df.drop(columns=["Tiempo"])
-    print(df.columns)
     try:
         df = df[["Escalas(m)Abertura", "Datos1(m)Abertura"]]
     except:

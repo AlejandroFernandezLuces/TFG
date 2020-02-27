@@ -20,7 +20,6 @@ def _process_nan(sensor_df):
     sensor_df = sensor_df.astype(float)
 
     sensor_df = sensor_df.replace(-1, np.NAN)
-    #sensor_df = sensor_df.interpolate()  # reconstrue os NAN's, pero e bo mirar un analisis mellor
     return sensor_df
 
 def _rename_columns(sensor_df, sensor_name):
@@ -41,6 +40,9 @@ def _rename_columns(sensor_df, sensor_name):
 def _fix_decimals(dataframe):
     """
     It's a must to pass the data before string conversion
+    Decimals are in spanish notation, so they are separated by
+    commas. We must change that to dots. Because CSV separated
+    the decimal from integer part, we must join them back
     :param dataframe:
     :return:
     """
@@ -59,7 +61,7 @@ def _interpolate(sensor_df):
     # resamples the df to minute frequency
     sensor_df = sensor_df.resample("30S").mean()
     sensor_df = sensor_df.interpolate(method="linear", limit=5)
-    #sensor_df = _process_nan(sensor_df)  # necesario porque o resample deixa Nans
+    sensor_df = _process_nan(sensor_df)  # necesario porque o resample deixa Nans
     return sensor_df
 
 def _process_df(sensor_df, resample=True):
@@ -77,14 +79,17 @@ def _process_df(sensor_df, resample=True):
                                         columns[7]])
 
     sensor_df = _fix_time(sensor_df)
-    sensor_df = _process_nan(sensor_df)
 
+    sensor_df = _process_nan(sensor_df)
     #if resample:
         # resamples the df to minute frequency
     sensor_df = sensor_df.resample("30S").mean()
-    sensor_df = sensor_df.interpolate(method="linear")
+    sensor_df = sensor_df.interpolate(method="linear", limit=20)
     sensor_df = _process_nan(sensor_df)
     #Debugging de graficas antes de cortalas
+    quantile = sensor_df["Escalas(m)"].quantile([0.15, 0.99])
+    sensor_df = sensor_df.where(sensor_df[["Escalas(m)"]] > quantile[0.15])
+    sensor_df = sensor_df.where(sensor_df[["Escalas(m)"]] < quantile[0.99])
     """plt.clf()
     plt.plot(sensor_df["Escalas(m)"])
     plt.pause(2)
@@ -192,7 +197,9 @@ def get_aperture_only(path):
                     print(subpath + filename)
                     df = pd.read_csv(subpath + filename)
                     df = _process_df(df, False)
+
                     dataframe_list.append(df)
+
     return dataframe_list
 
 

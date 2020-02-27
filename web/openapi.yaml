@@ -1,0 +1,46 @@
+openapi: 3.0.0
+info:
+  title: Aperture API
+  description:  Simple API for tow signal prediction.
+
+paths:
+  /towdata:
+    get:
+      summary: returns the prediction for the current dataset
+      responses:
+        "200":
+          description: Prediction number
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  time:
+                    type: string
+                  value:
+                    type: float
+        "503":
+          description: No available data in server
+        default:
+          description: Unexpected error
+
+    post:
+      summary: uploads data to train and predict over
+      requestBody:
+        required: true
+        content:
+          text/plain; charset=utf-8
+      responses:
+        "201":
+          description: Data uploaded succesfully
+    put:
+      summary: Uploads live data to the server for predicition
+      requestBody:
+        required: true
+        content:
+          text/plain; charset=utf-8
+
+      responses:
+        "201":
+          description: data uploaded successfully
+

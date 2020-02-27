@@ -14,15 +14,15 @@ def print_gap_comparison(y_test, gap_dict, gap_dist, save=False):
     ax.set_xlim(0, len(y_test))
     count = 0
     zeroes = []
-    """for i in gap_dist:
+    for i in gap_dist:
         if i != 0:
             pred = gap_dict[i]
-            zeroes = [0]*i
+            zeroes = [np.nan]*i
             zeroes = np.array(zeroes)
             zeroes = np.append(zeroes, pred)
             ax.plot(zeroes, next(linecycler), label="gap: "+str(i))
             count += i
-    legend = ax.legend(loc='best', shadow=True, fontsize='medium')"""
+    legend = ax.legend(loc='best', shadow=True, fontsize='medium')
     if save:
         plt.savefig("Graficos/LR prediction-real/fig_gap_2.svg")
         plt.close()

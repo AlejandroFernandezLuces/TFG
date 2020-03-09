@@ -8,7 +8,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from functools import reduce
 from itertools import cycle
-
+from utils import listutils
 
 #def main():
 
@@ -24,8 +24,7 @@ for elem in dfs:
             dfs_unscaled.append(elem.to_numpy())
 scaled_dfs, df_scaler = scaler.fit_scale(dfs_unscaled)
 train, test = train_test_split(dfs_unscaled, test_size=0.9, random_state=42)
-test = np.array(test[50:52])
-plt.plot(test.transpose()[1])
+test = np.array(test[14:16])
 
 
 error_list = []
@@ -74,15 +73,15 @@ X_test_list = []
 
 fib = lambda n:reduce(lambda x,n:[x[1],x[0]+x[1]], range(n),[0,1])[0]
 exp_list = [fib(i) for i in range(2,10)]
-#exp_list = [20, 30, 40, 0]
 gap_dict = {}
 y_dict = {}
+error_dict = {}
 gap_list = []
 
 for gap in exp_list:
     print("\n\n\n---Distancia de predicion => " + str(gap))
-    X_train, y_train = windowroll.map_window(train,window_size=30, gap=gap)
-    X_test, y_test = windowroll.map_window(test,window_size=30, gap=gap)
+    X_train, y_train = windowroll.map_window(train,window_size=80, gap=gap)
+    X_test, y_test = windowroll.map_window(test,window_size=80, gap=gap)
 
 
     print("\n\nErros para linear regression ->\n")
@@ -91,15 +90,21 @@ for gap in exp_list:
     df_aux = pd.DataFrame({"algorithm": "lr",
                            "error": [error_lr],
                            "gap": [gap]})
-    #df_lr = df_lr.append(df_aux)
     pred = model_lr.predict(X_test)
     pred_list.append(pred)
-    #y_test_list.append(y_test)
-    #gap_list.append(pred)
     gap_dict[gap] = pred
     y_dict[gap] = y_test
+    error_dict[gap] = error_lr
 
-graphs.print_gap_comparison(y_dict[1], gap_dict, exp_list, save=False)
+#Descomentar para sacar graficas de comparativa de gaps
+#graphs.print_gap_comparison(y_dict[1], gap_dict, exp_list, save=False)
+
+#Descomentar para sacar graficas do que veria o usuario
+elem_id = 217
+aperture_list = listutils.odd_list(X_test[elem_id])
+graphs.print_userlike(aperture_list, gap_dict, y_dict, error_dict, exp_list, elem_id, save=False)
+
+
 
 """
 print("\n\nErros para RandomForest ->\n")

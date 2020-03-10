@@ -24,7 +24,7 @@ for elem in dfs:
             dfs_unscaled.append(elem.to_numpy())
 scaled_dfs, df_scaler = scaler.fit_scale(dfs_unscaled)
 train, test = train_test_split(dfs_unscaled, test_size=0.9, random_state=42)
-test = np.array(test[14:16])
+test = np.array(test[35:38])
 
 
 error_list = []
@@ -100,7 +100,7 @@ for gap in exp_list:
 #graphs.print_gap_comparison(y_dict[1], gap_dict, exp_list, save=False)
 
 #Descomentar para sacar graficas do que veria o usuario
-elem_id = 217
+elem_id = 10
 aperture_list = listutils.odd_list(X_test[elem_id])
 graphs.print_userlike(aperture_list, gap_dict, y_dict, error_dict, exp_list, elem_id, save=False)
 

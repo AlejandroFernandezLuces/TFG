@@ -12,6 +12,9 @@ from utils import listutils
 
 #def main():
 
+
+#Heññp
+
 raw_data = "Dataset/iskra/"
 df_path = "Dataset/test/"
 #filemanager.get_all_csv(raw_data)

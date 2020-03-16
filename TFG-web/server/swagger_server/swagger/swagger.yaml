@@ -1,0 +1,87 @@
+openapi: 3.0.0
+info:
+  title: Aperture API
+  description: Simple API for tow signal prediction.
+  version: 1.0.0
+servers:
+- url: /
+paths:
+  /towdata:
+    get:
+      summary: returns the prediction for the current dataset
+      description: it will return the predicition for the fibonacci series from 1
+        to N, (the N should be configurable, but for next iterations. Window size
+        should be configurable)
+      operationId: towdata_get
+      responses:
+        "200":
+          description: Prediction array
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200'
+        "503":
+          description: No available data or not enough data in server
+      x-openapi-router-controller: swagger_server.controllers.default_controller
+    put:
+      summary: Uploads live data to the server for predicition
+      description: The data should be in a csv format
+      operationId: towdata_put
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/body'
+        required: true
+      responses:
+        "201":
+          description: data uploaded successfully
+      x-openapi-router-controller: swagger_server.controllers.default_controller
+    post:
+      summary: uploads data to train and predict over
+      description: The body should be in .csv format so the server can read it
+      operationId: towdata_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/body_1'
+        required: true
+      responses:
+        "201":
+          description: Data uploaded succesfully
+      x-openapi-router-controller: swagger_server.controllers.default_controller
+    delete:
+      summary: Deletes the current prediction data
+      operationId: towdata_delete
+      responses:
+        "200":
+          description: Data deleted succesfully
+      x-openapi-router-controller: swagger_server.controllers.default_controller
+components:
+  schemas:
+    inline_response_200:
+      type: object
+      properties:
+        nsteps:
+          type: integer
+        value:
+          type: number
+      example:
+        nsteps: 0
+        value: 6.02745618307040320615897144307382404804229736328125
+    body:
+      type: object
+      properties:
+        id:
+          type: integer
+        csv:
+          type: string
+    body_1:
+      type: object
+      properties:
+        id:
+          type: integer
+        csv:
+          type: string
+

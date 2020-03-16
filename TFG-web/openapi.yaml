@@ -1,0 +1,68 @@
+openapi: "3.0.0"
+info:
+  title: Aperture API
+  description:  Simple API for tow signal prediction.
+  version: "1.0.0"
+
+paths:
+  /towdata:
+    get:
+      summary: returns the prediction for the current dataset
+      description: it will return the predicition for the fibonacci series from
+                   1 to N, (the N should be configurable, but for next
+                   iterations. Window size should be configurable)
+      responses:
+        "200":
+          description: Prediction array
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  nsteps:
+                    type: integer
+                  value:
+                    type: number
+        "503":
+          description: No available data or not enough data in server
+
+
+    post:
+      summary: uploads data to train and predict over
+      description: The body should be in .csv format so the server can read it
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: integer
+                csv:
+                  type: string
+      responses:
+        "201":
+          description: Data uploaded succesfully
+    put:
+      summary: Uploads live data to the server for predicition
+      description: The data should be in a csv format
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: integer
+                csv:
+                  type: string
+      responses:
+        "201":
+          description: data uploaded successfully
+    delete:
+      summary: Deletes the current prediction data
+      responses:
+        "200":
+          description: Data deleted succesfully

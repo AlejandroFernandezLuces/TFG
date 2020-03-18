@@ -5,7 +5,9 @@ from swagger_server.models.body import Body  # noqa: E501
 from swagger_server.models.body1 import Body1  # noqa: E501
 from swagger_server.models.inline_response200 import InlineResponse200  # noqa: E501
 from swagger_server import util
-
+from swagger_server.business_logic.save_data import SaveData
+from swagger_server.business_logic.delete_data import DeleteData
+from swagger_server.business_logic.update_data import UpdateData
 
 def towdata_delete():  # noqa: E501
     """Deletes the current prediction data
@@ -15,6 +17,9 @@ def towdata_delete():  # noqa: E501
 
     :rtype: None
     """
+
+    DeleteData.delete(DeleteData)
+
     return 'do some magic!'
 
 
@@ -41,7 +46,9 @@ def towdata_post(body):  # noqa: E501
     """
     if connexion.request.is_json:
         body = Body1.from_dict(connexion.request.get_json())  # noqa: E501
-    return 'do some magic!'
+        SaveData.save(SaveData, body.csv)
+
+    return body.csv
 
 
 def towdata_put(body):  # noqa: E501
@@ -56,4 +63,5 @@ def towdata_put(body):  # noqa: E501
     """
     if connexion.request.is_json:
         body = Body.from_dict(connexion.request.get_json())  # noqa: E501
+        UpdateData.update(SaveData, body.csv)
     return 'do some magic!'

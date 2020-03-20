@@ -81,5 +81,16 @@ class TestApi(BaseTestCase):
         filesize = os.path.getsize(file)
         self.assertEqual(0, filesize)
 
+
+    def test_towdata_get(self):
+        """Test case for towdata_get
+
+        returns the prediction for the current dataset
+        """
+        response = self.client.open(
+            '/towdata',
+            method='GET')
+        self.assert200(response,
+                       'Response body is : ' + response.data.decode('utf-8'))
 if __name__ == '__main__':
     unittest.main()

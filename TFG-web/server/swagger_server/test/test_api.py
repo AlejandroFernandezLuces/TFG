@@ -8,6 +8,9 @@ from swagger_server.models.body import Body  # noqa: E501
 from swagger_server.models.body1 import Body1  # noqa: E501
 from swagger_server.test import BaseTestCase
 import os
+from joblib import dump, load
+
+
 
 class TestApi(BaseTestCase):
 
@@ -82,15 +85,22 @@ class TestApi(BaseTestCase):
         self.assertEqual(0, filesize)
 
 
-    def test_towdata_get(self):
-        """Test case for towdata_get
-
-        returns the prediction for the current dataset
+    """def test_towdata_get(self):"""
+    """Test case for towdata_get
+    
+    returns the prediction for the current dataset
         """
-        response = self.client.open(
-            '/towdata',
-            method='GET')
-        self.assert200(response,
-                       'Response body is : ' + response.data.decode('utf-8'))
+    """response = self.client.open(
+        '/towdata',
+        method='GET')
+
+
+    expected_pred = load("path-to-expected-pred")
+    retrieved_pred = default_controller.towdata_get()
+
+
+    self.assertEqual(expected_pred, retrieved_pred)"""
+
+
 if __name__ == '__main__':
     unittest.main()

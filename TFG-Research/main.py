@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 from functools import reduce
 from itertools import cycle
 from utils import listutils
+from joblib import dump, load
 
 #def main():
 
@@ -104,7 +105,7 @@ elem_id = 10
 aperture_list = listutils.odd_list(X_test[elem_id])
 graphs.print_userlike(aperture_list, gap_dict, y_dict, error_dict, exp_list, elem_id, save=False)
 
-
+s = dump(model_lr, "C:/Users/21ale/Documents/CLASE/TFG/TFG-proyect/TFG-Research/model_persistence/linearregressor.joblib")
 
 """
 print("\n\nErros para RandomForest ->\n")

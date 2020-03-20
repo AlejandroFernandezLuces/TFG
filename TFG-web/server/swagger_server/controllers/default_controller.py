@@ -31,6 +31,9 @@ def towdata_get():  # noqa: E501
 
     :rtype: InlineResponse200
     """
+
+
+
     return 'do some magic!'
 
 
@@ -48,7 +51,6 @@ def towdata_post(body):  # noqa: E501
         body = Body1.from_dict(connexion.request.get_json())  # noqa: E501
         SaveData.save(SaveData, body.csv)
 
-    return body.csv
 
 
 def towdata_put(body):  # noqa: E501
@@ -64,4 +66,3 @@ def towdata_put(body):  # noqa: E501
     if connexion.request.is_json:
         body = Body.from_dict(connexion.request.get_json())  # noqa: E501
         UpdateData.update(SaveData, body.csv)
-    return 'do some magic!'

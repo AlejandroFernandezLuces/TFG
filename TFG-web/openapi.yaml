@@ -11,6 +11,12 @@ paths:
       description: it will return the predicition for the fibonacci series from
                    1 to N, (the N should be configurable, but for next
                    iterations. Window size should be configurable)
+      parameters:
+        - in: query
+          name: algorithm
+          schema:
+            type: string
+          description: the algorithm to choose for prediction
       responses:
         "200":
           description: Prediction array

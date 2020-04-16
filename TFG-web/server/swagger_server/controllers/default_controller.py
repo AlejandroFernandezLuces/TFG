@@ -1,5 +1,5 @@
 import connexion
-import six
+import json
 
 from swagger_server.models.body import Body  # noqa: E501
 from swagger_server.models.body1 import Body1  # noqa: E501
@@ -8,6 +8,8 @@ from swagger_server import util
 from swagger_server.business_logic.save_data import SaveData
 from swagger_server.business_logic.delete_data import DeleteData
 from swagger_server.business_logic.update_data import UpdateData
+from swagger_server.business_logic.get_prediction import GetPrediction
+
 
 def towdata_delete():  # noqa: E501
     """Deletes the current prediction data
@@ -23,7 +25,7 @@ def towdata_delete():  # noqa: E501
     return 'do some magic!'
 
 
-def towdata_get():  # noqa: E501
+def towdata_get(algorithm="LR"):  # noqa: E501
     """returns the prediction for the current dataset
 
     it will return the predicition for the fibonacci series from 1 to N, (the N should be configurable, but for next iterations. Window size should be configurable) # noqa: E501
@@ -31,10 +33,9 @@ def towdata_get():  # noqa: E501
 
     :rtype: InlineResponse200
     """
+    prediction = json.dumps(GetPrediction.predict_data(GetPrediction, algorithm))
 
-
-
-    return 'do some magic!'
+    return prediction
 
 
 def towdata_post(body):  # noqa: E501

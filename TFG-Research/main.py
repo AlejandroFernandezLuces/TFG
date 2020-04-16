@@ -97,6 +97,9 @@ for gap in exp_list:
     y_dict[gap] = y_test
     error_dict[gap] = error_lr
 
+    dump(model_lr,
+         "C:/Users/21ale/Documents/CLASE/TFG/TFG-proyect/TFG-Research/model_persistence/lr_gap="+str(gap)+".joblib")
+
 #Descomentar para sacar graficas de comparativa de gaps
 #graphs.print_gap_comparison(y_dict[1], gap_dict, exp_list, save=False)
 
@@ -105,7 +108,6 @@ elem_id = 10
 aperture_list = listutils.odd_list(X_test[elem_id])
 graphs.print_userlike(aperture_list, gap_dict, y_dict, error_dict, exp_list, elem_id, save=False)
 
-s = dump(model_lr, "C:/Users/21ale/Documents/CLASE/TFG/TFG-proyect/TFG-Research/model_persistence/linearregressor.joblib")
 
 """
 print("\n\nErros para RandomForest ->\n")

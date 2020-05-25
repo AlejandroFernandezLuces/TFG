@@ -1,0 +1,8 @@
+<div class="form-group">
+    <button mat-raised-button>
+        <label for="file">Add File</label>
+        <input hidden type="file"
+            id="file"
+            (change)="uploadFile($event.target.files)">
+    </button>
+</div>

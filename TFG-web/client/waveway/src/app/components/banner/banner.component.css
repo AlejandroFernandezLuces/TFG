@@ -1,0 +1,14 @@
+h1 {
+    background-color: #0B486B;
+    color: rgb(130, 194, 194);
+    border-radius: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 10%;
+
+    padding-left: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-family: "Optima", sans-serif;
+    box-shadow: 5px 5px 1px rgb(3, 42, 65);
+}

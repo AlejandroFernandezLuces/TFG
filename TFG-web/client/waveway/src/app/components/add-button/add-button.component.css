@@ -1,0 +1,10 @@
+button{
+    background-image: "src\assets\icons\subir.png";
+    width: 100px;
+    height: 50px;
+}
+.uploadfilecontainer:hover {
+    cursor: pointer;
+    background-color: #1C8ADB !important;
+    opacity: 0.8;
+}

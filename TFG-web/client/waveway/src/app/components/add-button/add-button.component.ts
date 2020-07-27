@@ -3,12 +3,14 @@ import { HttpEventType, HttpErrorResponse } from '@angular/common/http';
 import { of } from 'rxjs';  
 import { catchError, map } from 'rxjs/operators';  
 import { TowdataService} from  'src/app/services/towdata.service';
+import { throwToolbarMixedModesError } from '@angular/material/toolbar';
 
 @Component({
   selector: 'app-add-button',
   templateUrl: './add-button.component.html',
   styleUrls: ['./add-button.component.css']
 })
+
 export class AddButtonComponent implements OnInit {
 
   constructor(private _towdataService: TowdataService) { }
@@ -16,13 +18,17 @@ export class AddButtonComponent implements OnInit {
   ngOnInit(): void {
 
   }
-  files: any = [];
+  fileToUpload: File = null;
 
-  uploadFile(file: File) {
-      this._towdataService.upload(1, file)
+  uploadFile(files: FileList) {
+      this.fileToUpload = files.item(0);
+      this._towdataService.upload(1, this.fileToUpload).subscribe(
+        response => console.log(response),
+        err => console.log(err)
+      );
 
   }
   deleteAttachment(index) {
-    this.files.splice(index, 1)
+    this.files.splice(index, 1);
   }
 }

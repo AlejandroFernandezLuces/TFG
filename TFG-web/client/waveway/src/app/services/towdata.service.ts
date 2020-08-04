@@ -8,10 +8,7 @@ import { HttpHeaders } from '@angular/common/http';
 
 const httpOptions = {
   headers: new HttpHeaders({
-    'Content-Type':  'text/plain',
-     'Access-Control-Allow-Origin': 'localhost',
-     'Access-Control-Allow-Methods': 'GET, POST, PATCH, PUT, DELETE, OPTIONS',
-     'Access-Control-Allow-Headers': 'Origin, Content-Type, X-Auth-Token'
+    'Content-Type':  'application/json'
      })
 };
 @Injectable({
@@ -21,13 +18,21 @@ export class TowdataService {
   fileContent: ArrayBuffer;
   constructor(private httpClient: HttpClient) { }
     
-   public upload(id: number, fileToUpload: File){
+   public async upload(id: number, fileToUpload: File){
       const endpoint = 'http://localhost:8080/towdata';
       const formData: FormData = new FormData();
-
+      const stringContent = await (await fileToUpload.text()).toString();
+      var jsonBuild = 
+      {   
+        "id": 1,
+        "csv": stringContent 
+      };
       formData.append('fileKey', fileToUpload, fileToUpload.name);
+      console.log(jsonBuild);
+
+
       return this.httpClient
-        .post(endpoint, formData, httpOptions).subscribe(
+        .post(endpoint, jsonBuild, httpOptions).subscribe(
           (val) => {
               console.log("POST call successful value returned in body", 
                           val);

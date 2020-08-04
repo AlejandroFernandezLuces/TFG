@@ -21,14 +21,12 @@ export class AddButtonComponent implements OnInit {
   fileToUpload: File = null;
 
   uploadFile(files: FileList) {
+    
       this.fileToUpload = files.item(0);
-      this._towdataService.upload(1, this.fileToUpload).subscribe(
-        response => console.log(response),
-        err => console.log(err)
-      );
+      this._towdataService.upload(1, this.fileToUpload)
 
   }
   deleteAttachment(index) {
-    this.files.splice(index, 1);
+    this.fileToUpload.slice(index, 1);
   }
 }

@@ -1,5 +1,6 @@
 import connexion
 import json
+import six
 
 from swagger_server.models.body import Body  # noqa: E501
 from swagger_server.models.body1 import Body1  # noqa: E501
@@ -9,7 +10,27 @@ from swagger_server.business_logic.save_data import SaveData
 from swagger_server.business_logic.delete_data import DeleteData
 from swagger_server.business_logic.update_data import UpdateData
 from swagger_server.business_logic.get_prediction import GetPrediction
+from swagger_server.business_logic.get_current_data import GetCurrentData
 
+
+def retrieve_data_get(xstart=None, ystart=None, limit=None):  # noqa: E501
+    """Returns the current uploaded dataset
+
+    it will return the current dataset in json format # noqa: E501
+
+    :param xstart:
+    :type xstart: int
+    :param ystart:
+    :type ystart: int
+    :param limit:
+    :type limit: int
+
+    :rtype: object
+    """
+    json_data = GetCurrentData.get_current_data(GetCurrentData, limit)
+    print(json_data[len(json_data) - 5:])
+
+    return json_data
 
 def towdata_delete():  # noqa: E501
     """Deletes the current prediction data
@@ -33,8 +54,7 @@ def towdata_get(algorithm="LR"):  # noqa: E501
 
     :rtype: InlineResponse200
     """
-    prediction = json.dumps(GetPrediction.predict_data(GetPrediction, algorithm))
-
+    prediction = GetPrediction.predict_data(GetPrediction, algorithm)
     return prediction
 
 
@@ -48,10 +68,10 @@ def towdata_post(body):  # noqa: E501
 
     :rtype: None
     """
-    if connexion.request.is_json:
-        body = Body1.from_dict(connexion.request.get_json())  # noqa: E501
-        SaveData.save(SaveData, body.csv)
 
+    body = Body1.from_dict(connexion.request.get_json())  # noqa: E501
+    SaveData.save(SaveData, body.csv)
+    return "Done!"
 
 
 def towdata_put(body):  # noqa: E501
@@ -64,6 +84,8 @@ def towdata_put(body):  # noqa: E501
 
     :rtype: None
     """
-    if connexion.request.is_json:
-        body = Body.from_dict(connexion.request.get_json())  # noqa: E501
-        UpdateData.update(SaveData, body.csv)
+
+
+    body = Body.from_dict(connexion.request.get_json())  # noqa: E501
+    print(body)
+    UpdateData.update(SaveData, body.csv)

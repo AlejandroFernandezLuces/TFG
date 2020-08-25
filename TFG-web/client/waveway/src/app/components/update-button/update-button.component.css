@@ -1,11 +1,7 @@
 button{
     background-image: "src\assets\icons\subir.png";
-    width: auto;
+    width: 100px;
     height: 50px;
-    margin-left: 45%;
-    margin-top: 2%;
-    background-color: #4e2079;
-    color: aqua;
 }
 .uploadfilecontainer:hover {
     cursor: pointer;

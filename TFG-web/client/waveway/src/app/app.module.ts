@@ -16,6 +16,7 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { DndDirective } from './components/add-button/dnd.directive';
 import { TowdataService } from './services/towdata.service';
 import { HttpClientModule } from "@angular/common/http";
+import { UpdateButtonComponent } from './components/update-button/update-button.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { HttpClientModule } from "@angular/common/http";
     BannerComponent,
     AddButtonComponent,
     DndDirective,
-    GraphComponent
+    GraphComponent,
+    UpdateButtonComponent
   ],
   imports: [
     BrowserModule,  

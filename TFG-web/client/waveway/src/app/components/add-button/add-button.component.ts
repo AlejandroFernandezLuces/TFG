@@ -1,9 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef  } from '@angular/core';
-import { HttpEventType, HttpErrorResponse } from '@angular/common/http';
-import { of } from 'rxjs';  
-import { catchError, map } from 'rxjs/operators';  
 import { TowdataService} from  'src/app/services/towdata.service';
-import { throwToolbarMixedModesError } from '@angular/material/toolbar';
 
 @Component({
   selector: 'app-add-button',
@@ -19,12 +15,12 @@ export class AddButtonComponent implements OnInit {
 
   }
   fileToUpload: File = null;
-
+  returnedValues: any;
   uploadFile(files: FileList) {
     
       this.fileToUpload = files.item(0);
-      this._towdataService.upload(1, this.fileToUpload)
-
+      this.returnedValues = this._towdataService.upload(1, this.fileToUpload)
+      console.log("this.returnedValues")
   }
   deleteAttachment(index) {
     this.fileToUpload.slice(index, 1);

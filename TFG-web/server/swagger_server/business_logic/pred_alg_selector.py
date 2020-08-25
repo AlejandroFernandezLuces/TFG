@@ -7,5 +7,6 @@ class PredAlgSelector():
     def fit_predict(self, data, algorithm):
 
         if algorithm == "LR":
+
             prediction = LinearRegression.fit_predict(self, data)
         return prediction

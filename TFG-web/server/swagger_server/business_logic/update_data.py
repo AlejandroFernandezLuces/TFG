@@ -1,7 +1,7 @@
 from swagger_server.DAO.towdataDAO import TowdataDAO
 
 
-class UpdateData():
+class UpdateData:
 
     def update(self, csv):
         """

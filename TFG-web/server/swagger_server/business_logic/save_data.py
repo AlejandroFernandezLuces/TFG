@@ -1,7 +1,7 @@
 from swagger_server.DAO.towdataDAO import TowdataDAO
 
 
-class SaveData():
+class SaveData:
 
     def save(self, csv):
         """
@@ -9,5 +9,4 @@ class SaveData():
         :param csv: A string containing a csv
         :return:
         """
-
         TowdataDAO.saveData(TowdataDAO, csv)

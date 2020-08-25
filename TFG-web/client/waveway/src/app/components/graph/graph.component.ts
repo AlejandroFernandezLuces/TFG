@@ -11,43 +11,62 @@ import * as CanvasJS from './canvasjs.min';
  
 export class GraphComponent implements OnInit {
 	ngOnInit() {
-	let dataPoints = [];
-	let dpsLength = 0;
-	let chart = new CanvasJS.Chart("chartContainer",{
-		exportEnabled: true,
-		title:{
-			text:"Datos en vivo"
-		},
-		data: [{
-			type: "spline",
-			dataPoints : dataPoints,
-		}]
-	});
-	
-	$.getJSON("http://localhost:8080/towdata", function(data) {  
-		$.each(data, function(key, value){
-			dataPoints.push({x: value[0], y: parseInt(value[1])});
-		});
-		dpsLength = dataPoints.length;
-		chart.render();
-		updateChart(); 
-	});
-	function updateChart() {	
-		$.getJSON("", function(data) {
-		$.each(data, function(key, value) {
-			dataPoints.push({
-			x: parseInt(value[0]),
-			y: parseInt(value[1])
-			});
-			dpsLength++;
+		let dataPoints = [];
+		let predictionPoints = [];
+		let dpsLength = 0;
+		let xvalue = 0;
+		let chart = new CanvasJS.Chart("chartContainer",{
+			exportEnabled: true,
+			title:{
+				text:"Predición da apertura do aparello"
+			},
+			data: [{
+				type: "spline",
+				dataPoints : dataPoints,
+			},
+			{
+				type: "spline",
+				dataPoints : predictionPoints,
+			}]
 		});
 		
-		if (dataPoints.length >  20 ) {
-      		dataPoints.shift();				
-      	}
-		chart.render();
-		setTimeout(function(){updateChart()}, 1000);
-	});
-    }
-}
+		updateChart()
+
+
+		function updateChart() {
+
+		$.getJSON("http://localhost:8080/retrieveData?limit=50", function(data) {
+			$.each(data, function(key, value) {
+				dataPoints.push({
+				x: xvalue++,
+				y: parseInt(value[1])
+				});
+				dpsLength++;
+			});
+			if (dataPoints.length > 21){
+				dataPoints.splice(0, dataPoints.length - 50)
+			}
+
+		});
+
+		$.getJSON("http://localhost:8080/towdata", function(data) {
+			$.each(data, function(key, value) {
+				predictionPoints.push({
+				x: parseInt(value[0]) + xvalue - 1,
+				y: parseInt(value[1]),
+				lineColor: "red",
+				color: "red"
+				});
+				dpsLength+=parseInt(value[0]);
+			});
+			if (predictionPoints.length > 8){
+				predictionPoints.splice(0, predictionPoints.length - 8)
+			}
+			chart.render();
+			setTimeout(function(){updateChart()}, 5000);
+
+		});
+
+		}
+	}
 }

@@ -85,15 +85,21 @@ def _process_df(sensor_df, resample=True):
         # resamples the df to minute frequency
     sensor_df = sensor_df.resample("30S").mean()
     sensor_df = sensor_df.interpolate(method="linear", limit=20)
-    sensor_df = _process_nan(sensor_df)
+    sensor_df_pre = _process_nan(sensor_df)
+
     #Debugging de graficas antes de cortalas
     quantile = sensor_df["Escalas(m)"].quantile([0.15, 0.99])
-    sensor_df = sensor_df.where(sensor_df[["Escalas(m)"]] > quantile[0.15])
+    sensor_df = sensor_df_pre.where(sensor_df[["Escalas(m)"]] > quantile[0.15])
     sensor_df = sensor_df.where(sensor_df[["Escalas(m)"]] < quantile[0.99])
-    """plt.clf()
-    plt.plot(sensor_df["Escalas(m)"])
-    plt.pause(2)
-    plt.show()"""
+    plt.clf()
+    fig, axs = plt.subplots(2)
+    fig.suptitle('Antes e despois de aplicar o filtro por cuartís')
+    axs[0].plot(sensor_df_pre["Escalas(m)"])
+    plt.xlabel("Data")
+    plt.ylabel("Profundidade(m)")
+    axs[1].plot(sensor_df["Escalas(m)"])
+    plt.setp(axs[0], xlabel="Data", ylabel="Profundidade(m)")
+    plt.show()
     return sensor_df
 
 def _create_dataframes(path):
@@ -122,9 +128,11 @@ def _join_dataframes(sensor_df_list):
     :param sensor_df_list: List of dfs
     :return: joined list of dfs in one df
     """
+
     if len(sensor_df_list) != 0:
         join = sensor_df_list[0]
         for i in range(1, len(sensor_df_list)):
+            print(sensor_df_list[i])
             join = join.join(sensor_df_list[i])
         return join
     else:
@@ -196,8 +204,14 @@ def get_aperture_only(path):
                 elif filename == "Estribor.csv":
                     print(subpath + filename)
                     df = pd.read_csv(subpath + filename)
-                    df = _process_df(df, False)
 
+                    df = _process_df(df, False)
+                    plt.plot(df["Datos1(Fa)"])
+                    plt.title("Apertura")
+                    plt.ylabel("Apertura (m)")
+                    plt.xlabel("Tempo")
+
+                    plt.show()
                     dataframe_list.append(df)
 
     return dataframe_list

@@ -1,4 +1,4 @@
-Code,Tiempo,Escalas(m),Datos1(Â°),Datos2(m),Latitude,Longitude,Sonda(m),Comment
+Code,Tiempo,Escalas(m),Datos1(°),Datos2(m),Latitude,Longitude,Sonda(m),Comment
 Babor,07:19:08,442,5,---,---,---,---,
 Babor,07:19:30,442,4,45,1,---,---,
 Babor,07:19:53,442,4,50,6,---,---,

@@ -1,4 +1,4 @@
-Code,Tiempo,Escalas(m),Datos1(Â°C),Datos2(m),Latitude,Longitude,Sonda(m),Comment
+Code,Tiempo,Escalas(m),Datos1(°C),Datos2(m),Latitude,Longitude,Sonda(m),Comment
 Starboard Temperature,05:36:58,1389,5,17,4,---,---,
 Starboard Temperature,05:37:36,---,---,---,---,---,---,
 Starboard Temperature,05:38:17,---,---,---,---,---,---,

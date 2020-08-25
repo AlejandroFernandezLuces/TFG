@@ -1,4 +1,4 @@
-Code,Tiempo,Escalas(m),Datos1(Â°),Datos2(m),Latitude,Longitude,Sonda(m),Comment
+Code,Tiempo,Escalas(m),Datos1(°),Datos2(m),Latitude,Longitude,Sonda(m),Comment
 Estribor,04:53:35,1798,7,0,0,---,---,
 Estribor,04:54:01,1798,9,0,5,---,---,
 Estribor,04:54:30,---,---,---,---,---,---,

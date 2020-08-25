@@ -1,5 +1,5 @@
 from sklearn.model_selection import train_test_split
-from dataset_management import dataframemanager, towfileseparator, filemanager
+from src.dataset_management import dataframemanager, towfileseparator, filemanager
 from src.models import randomforest, supportvectorregression as svr, \
     linearregression, sarimax
 from src.utils import windowroll, dfopener, scaler, arima_data_manager, graphs
@@ -8,9 +8,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from functools import reduce
 from itertools import cycle
-from utils import listutils
+from src.utils import listutils
 from joblib import dump, load
-
+import pickle
 #def main():
 
 raw_data = "Dataset/iskra/"
@@ -97,50 +97,49 @@ for gap in exp_list:
     y_dict[gap] = y_test
     error_dict[gap] = error_lr
 
-    dump(model_lr,
-         "C:/Users/21ale/Documents/CLASE/TFG/TFG-proyect/TFG-Research/model_persistence/lr_gap="+str(gap)+".joblib")
+    #dump(model_lr,"model_persistence/lr_gap="+str(gap)+".joblib")
 
-#Descomentar para sacar graficas de comparativa de gaps
-#graphs.print_gap_comparison(y_dict[1], gap_dict, exp_list, save=False)
+    #Descomentar para sacar graficas de comparativa de gaps
+    #graphs.print_gap_comparison(y_dict[1], gap_dict, exp_list, save=False)
 
-#Descomentar para sacar graficas do que veria o usuario
-elem_id = 10
-aperture_list = listutils.odd_list(X_test[elem_id])
-graphs.print_userlike(aperture_list, gap_dict, y_dict, error_dict, exp_list, elem_id, save=False)
-
-
-"""
-print("\n\nErros para RandomForest ->\n")
-error_rfr_list = []
-error_rfr, rfr_params, rfr_model = randomforest.fit_predict_rfr(X_train,y_train, X_test, y_test)
-df_aux = pd.DataFrame({"algorithm":"rfr",
-                       "error":[error_rfr],
-                       "gap":[gap],
-                       "params": [rfr_params]})
-df_rfr = df_rfr.append(df_aux)
-pred = randomforest.predict_rfr(rfr_model, X_test)
-pred_list.append(pred)
-y_test_list.append(y_test)
-gap_dict[gap] = pred"""
+    #Descomentar para sacar graficas do que veria o usuario
+    elem_id = 10
+    aperture_list = listutils.odd_list(X_test[elem_id])
+    #graphs.print_userlike(aperture_list, gap_dict, y_dict, error_dict, exp_list, elem_id, save=False)
 
 
 
-"""print("\n\nErros para SVR ---->\n")
+    print("\n\nErros para RandomForest ->\n")
+    error_rfr_list = []
+    error_rfr, rfr_params, rfr_model = randomforest.fit_predict_rfr(X_train,y_train, X_test, y_test)
+    df_aux = pd.DataFrame({"algorithm":"rfr",
+                           "error":[error_rfr],
+                           "gap":[gap],
+                           "params": [rfr_params]})
+    df_rfr = df_rfr.append(df_aux)
+    pred = randomforest.predict_rfr(rfr_model, X_test)
+    pred_list.append(pred)
+    y_test_list.append(y_test)
+    gap_dict[gap] = pred
 
-error_svr, params_svr =  svr.fit_predict_svr(
-X_train,y_train, X_test, y_test)
-df_aux = pd.DataFrame({"algorithm": "svr",.....
-                       "error": [error_svr],
-                       "gap": [gap],
-                       "params":[params_svr]})
 
-df_svr = df_svr.append(df_aux)
-print("<<<<<<<< End of battery training >>>>>>>>>>>>>")
-result_list = [df_lr, df_rfr, df_svr]
 
-file = open("Results/pickled_results_aprox1", "wb")
-pickle.dump(result_list, file)
-file.close()"""
+    print("\n\nErros para SVR ---->\n")
+
+    error_svr, params_svr =  svr.fit_predict_svr(
+    X_train,y_train, X_test, y_test)
+    df_aux = pd.DataFrame({"algorithm": "svr",
+                           "error": [error_svr],
+                           "gap": [gap],
+                           "params":[params_svr]})
+
+    df_svr = df_svr.append(df_aux)
+    print("<<<<<<<< End of battery training >>>>>>>>>>>>>")
+    result_list = [df_lr, df_rfr, df_svr]
+
+    #file = open("Results/pickled_results_aprox1", "wb")
+    #pickle.dump(result_list, file)
+    #file.close()
 
 
 

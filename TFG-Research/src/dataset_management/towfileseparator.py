@@ -1,4 +1,4 @@
-from dataset_management import dataframemanager as dfm
+from src.dataset_management import dataframemanager as dfm
 import math
 import matplotlib.pyplot as plt
 """

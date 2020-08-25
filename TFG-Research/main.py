@@ -136,10 +136,10 @@ for gap in exp_list:
     df_svr = df_svr.append(df_aux)
     print("<<<<<<<< End of battery training >>>>>>>>>>>>>")
     result_list = [df_lr, df_rfr, df_svr]
-
-    #file = open("Results/pickled_results_aprox1", "wb")
-    #pickle.dump(result_list, file)
-    #file.close()
+    print(result_list)
+    file = open("Results/pickled_results_aprox1", "wb")
+    pickle.dump(result_list, file)
+    file.close()
 
 
 

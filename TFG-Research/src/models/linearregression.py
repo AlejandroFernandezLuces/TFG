@@ -12,7 +12,7 @@ def fit_predict_lr(X_train, y_train, X_test, y_test):
     pred = gs.predict(X_test)  # make prediction on test set
     error = sqrt(mean_squared_error(y_test, pred))  # calculate rmse
     print("LR---> RMSE value is:", error)
-    return  error, model
+    return  error, gs
 
 def predict_lr(model, X_test):
     pred = model.predict(X_test)

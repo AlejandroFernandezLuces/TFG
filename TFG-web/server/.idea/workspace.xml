@@ -5,320 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1daa36d1-2036-46cf-9db1-32e0ef2c5a99" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/csv_files_tagged/10-0.csv-embarra=0.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/csv_files_tagged/10-0.csv-embarra=0.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/1-2embarres/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/1-2embarres/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/1-2embarres/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/1-2embarres/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/10-3cap/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/10-3cap/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/10-3cap/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/10-3cap/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/2-1cap,2emb/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/2-1cap,2emb/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/2-1cap,2emb/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/2-1cap,2emb/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/3-1cap/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/3-1cap/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/3-1cap/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/3-1cap/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/4-1cap/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/4-1cap/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/4-1cap/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/4-1cap/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/5-sucios/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/5-sucios/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/5-sucios/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/5-sucios/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/6-1emb/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/6-1emb/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/6-1emb/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/6-1emb/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/7-1emb/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/7-1emb/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/7-1emb/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/7-1emb/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/8-1cap,1emb/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/8-1cap,1emb/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/8-1cap,1emb/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/8-1cap,1emb/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/9/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/9/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/9/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/9/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera0/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera0/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera0/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera0/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera1/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera1/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera1/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera1/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera10/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera10/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera10/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera10/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera11/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera11/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera11/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera11/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera12/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera12/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera12/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera12/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera13/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera13/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera13/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera13/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera14/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera14/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera14/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera14/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera16/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera16/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera16/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera16/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera17/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera17/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera17/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera17/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera18/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera18/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera18/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera18/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera19/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera19/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera19/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera19/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera2/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera2/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera2/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera2/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera20/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera20/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera20/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera20/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera21/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera21/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera21/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera21/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera22/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera22/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera22/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera22/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera22/Starboard Temperature.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera22/Starboard Temperature.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera23/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera23/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera23/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera23/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera24/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera24/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera24/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera24/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera25/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera25/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera25/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera25/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera26/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera26/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera26/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera26/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera27/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera27/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera27/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera27/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera28/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera28/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera28/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera28/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera29/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera29/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera29/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera29/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera3/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera3/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera3/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera3/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera30/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera30/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera30/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera30/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera30/Starboard Temperature.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera30/Starboard Temperature.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera31/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera31/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera31/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera31/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera31/Starboard Temperature.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera31/Starboard Temperature.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera32/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera32/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera32/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera32/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera33/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera33/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera33/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera33/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera34/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera34/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera34/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera34/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera35/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera35/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera35/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera35/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera36/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera36/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera36/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera36/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera37/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera37/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera37/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera37/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera37/Starboard Temperature.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera37/Starboard Temperature.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera38/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera38/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera38/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera38/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera39/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera39/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera39/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera39/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera4/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera4/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera4/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera4/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera40/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera40/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera40/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera40/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera41/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera41/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera41/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera41/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera42/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera42/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera42/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera42/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera43/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera43/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera43/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera43/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera44/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera44/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera44/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera44/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera45/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera45/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera45/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera45/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera45/Starboard Temperature.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera45/Starboard Temperature.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera46/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera46/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera46/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera46/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera46/Starboard Temperature.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera46/Starboard Temperature.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera47/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera47/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera47/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera47/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera48/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera48/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera48/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera48/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera49/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera49/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera49/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera49/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera5/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera5/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera5/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera5/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera50/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera50/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera50/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera50/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera51/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera51/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera51/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera51/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera52/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera52/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera52/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera52/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera53/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera53/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera53/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera53/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera54/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera54/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera54/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera54/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera6/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera6/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera6/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera6/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera6/Starboard Temperature.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera6/Starboard Temperature.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera7/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera7/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera7/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera7/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera8/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera8/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera8/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera8/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera8/Starboard Temperature.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera8/Starboard Temperature.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera9/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera9/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera9/Estribor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera9/Estribor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera9/Starboard Temperature.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/abdera9/Starboard Temperature.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra1/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra1/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra1/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra1/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra10/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra10/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra10/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra10/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra11/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra11/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra11/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra11/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra12/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra12/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra12/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra12/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra13/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra13/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra13/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra13/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra14/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra14/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra14/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra14/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra15/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra15/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra15/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra15/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra16/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra16/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra16/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra16/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra17/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra17/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra17/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra17/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra18/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra18/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra18/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra18/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra19/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra19/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra19/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra19/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra2/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra2/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra2/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra2/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra20/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra20/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra20/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra20/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra21/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra21/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra21/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra21/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra22/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra22/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra22/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra22/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra23/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra23/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra23/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra23/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra24/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra24/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra24/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra24/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra25/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra25/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra25/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra25/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra26/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra26/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra26/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra26/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra27/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra27/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra27/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra27/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra28/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra28/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra28/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra28/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra29/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra29/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra29/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra29/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra3/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra3/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra3/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra3/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra30/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra30/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra30/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra30/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra31/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra31/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra31/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra31/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra32/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra32/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra32/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra32/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra33/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra33/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra33/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra33/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra34/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra34/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra34/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra34/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra35/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra35/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra35/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra35/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra36/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra36/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra36/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra36/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra37/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra37/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra37/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra37/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra38/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra38/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra38/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra38/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra4/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra4/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra4/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra4/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra40/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra40/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra40/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra40/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra41/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra41/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra41/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra41/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra42/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra42/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra42/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra42/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra43/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra43/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra43/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra43/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra44/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra44/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra44/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra44/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra45/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra45/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra45/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra45/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra46/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra46/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra46/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra46/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra47/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra47/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra47/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra47/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra48/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra48/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra48/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra48/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra49/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra49/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra49/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra49/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra5/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra5/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra5/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra5/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra50/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra50/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra50/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra50/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra51/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra51/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra51/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra51/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra52/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra52/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra52/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra52/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra53/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra53/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra53/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra53/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra54/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra54/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra54/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra54/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra55/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra55/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra55/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra55/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra56/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra56/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra56/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra56/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra57/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra57/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra57/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra57/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra58/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra58/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra58/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra58/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra59/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra59/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra59/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra59/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra6/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra6/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra6/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra6/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra60/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra60/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra60/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra60/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra61/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra61/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra61/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra61/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra62/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra62/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra62/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra62/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra63/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra63/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra63/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra63/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra64/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra64/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra64/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra64/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra65/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra65/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra65/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra65/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra66/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra66/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra66/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra66/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra67/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra67/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra67/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra67/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra68/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra68/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra68/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra68/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra69/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra69/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra69/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra69/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra7/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra7/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra7/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra7/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra70/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra70/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra70/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra70/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra71/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra71/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra71/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra71/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra72/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra72/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra72/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra72/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra73/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra73/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra73/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra73/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra74/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra74/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra74/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra74/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra75/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra75/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra75/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra75/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra8/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra8/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra8/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra8/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra9/Babor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra9/Babor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra9/Starboard Door Heel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/Dataset/iskra/iskra9/Starboard Door Heel.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/src/dataset_management/dataframemanager.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/src/dataset_management/dataframemanager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/src/dataset_management/manualtagger.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/src/dataset_management/manualtagger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/src/dataset_management/towfileseparator.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/src/dataset_management/towfileseparator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TFG-Research/src/models/randomforest.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/src/models/randomforest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/waveway/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/waveway/src/app/app.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/waveway/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/waveway/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/waveway/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/waveway/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/waveway/src/app/components/add-button/add-button.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/waveway/src/app/components/add-button/add-button.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/waveway/src/app/components/add-button/add-button.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/waveway/src/app/components/add-button/add-button.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/waveway/src/app/components/add-button/add-button.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/waveway/src/app/components/add-button/add-button.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/waveway/src/app/components/banner/banner.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/waveway/src/app/components/banner/banner.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/waveway/src/app/components/graph/graph.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/waveway/src/app/components/graph/graph.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/waveway/src/app/components/graph/graph.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/waveway/src/app/components/graph/graph.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/waveway/src/app/services/towdata.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/waveway/src/app/services/towdata.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swagger_server/DAO/towdataDAO.py" beforeDir="false" afterPath="$PROJECT_DIR$/swagger_server/DAO/towdataDAO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swagger_server/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/swagger_server/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swagger_server/business_logic/get_current_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/swagger_server/business_logic/get_current_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swagger_server/business_logic/get_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/swagger_server/business_logic/get_prediction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swagger_server/business_logic/ml_models/linear_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/swagger_server/business_logic/ml_models/linear_regression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swagger_server/business_logic/pred_alg_selector.py" beforeDir="false" afterPath="$PROJECT_DIR$/swagger_server/business_logic/pred_alg_selector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swagger_server/business_logic/save_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/swagger_server/business_logic/save_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swagger_server/business_logic/update_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/swagger_server/business_logic/update_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swagger_server/controllers/default_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/swagger_server/controllers/default_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swagger_server/database/savefile.csv" beforeDir="false" afterPath="$PROJECT_DIR$/swagger_server/database/savefile.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swagger_server/swagger/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/swagger_server/swagger/swagger.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trained_models/linearregressor.joblib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TFG-Research/src/models/linearregression.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../TFG-Research/src/models/linearregression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -331,7 +19,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../TFG-Research/src/dataset_management/towfileseparator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1513">
+            <state relative-caret-position="618">
               <caret line="91" column="38" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
             </state>
           </provider>
@@ -352,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../TFG-Research/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="88" column="51" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
+            <state relative-caret-position="340">
+              <caret line="88" column="45" lean-forward="true" selection-start-line="88" selection-start-column="45" selection-end-line="88" selection-end-column="45" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
               </folding>
@@ -391,17 +79,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../TFG-Research/src/models/supportvectorregression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="16" column="61" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="61" />
+            <state relative-caret-position="85">
+              <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-end-line="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../TFG-Research/src/models/linearregression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+            <state relative-caret-position="238">
+              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -409,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../TFG-Research/src/models/randomforest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="39" column="72" selection-start-line="39" selection-start-column="72" selection-end-line="39" selection-end-column="72" />
+            <state relative-caret-position="315">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
@@ -462,12 +150,13 @@
         <option value="$PROJECT_DIR$/../../TFG-Research/src/dataset_management/dataframemanager.py" />
         <option value="$PROJECT_DIR$/../../TFG-Research/main.py" />
         <option value="$PROJECT_DIR$/../../TFG-Research/src/models/randomforest.py" />
+        <option value="$PROJECT_DIR$/../../TFG-Research/src/models/linearregression.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="495" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="511" />
+    <option name="y" value="56" />
     <option name="width" value="1296" />
     <option name="height" value="1040" />
   </component>
@@ -628,6 +317,14 @@
       <option name="presentableId" value="Default" />
       <updated>1594310679879</updated>
     </task>
+    <task id="LOCAL-00001" summary="changes linear regression kfold">
+      <created>1598368175373</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598368175373</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -640,9 +337,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="511" y="56" width="1296" height="1040" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11275026" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17011128" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -652,10 +350,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49841017" weight="0.32871974" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49761525" weight="0.32871974" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4944356" visible="true" weight="0.43445286" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.49761525" visible="true" weight="0.10253583" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4944356" weight="0.503792" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.4435612" side_tool="true" weight="0.5132641" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49682036" weight="0.31310943" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49682036" weight="0.47453955" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -679,6 +377,10 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="changes linear regression kfold" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes linear regression kfold" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test-requirements.txt">
@@ -910,13 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../TFG-Research/src/dataset_management/towfileseparator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1513">
-          <caret line="91" column="38" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../TFG-Research/src/dataset_management/manualtagger.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -958,10 +653,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../TFG-Research/src/models/randomforest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../TFG-Research/src/models/supportvectorregression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../TFG-Research/src/dataset_management/towfileseparator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="618">
+          <caret line="91" column="38" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../../TFG-Research/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="88" column="51" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
+        <state relative-caret-position="340">
+          <caret line="88" column="45" lean-forward="true" selection-start-line="88" selection-start-column="45" selection-end-line="88" selection-end-column="45" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
           </folding>
@@ -970,25 +686,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../TFG-Research/src/models/linearregression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+        <state relative-caret-position="238">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../TFG-Research/src/models/supportvectorregression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="61" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../TFG-Research/src/models/randomforest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="39" column="72" selection-start-line="39" selection-start-column="72" selection-end-line="39" selection-end-column="72" />
         </state>
       </provider>
     </entry>

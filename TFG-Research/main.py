@@ -7,11 +7,10 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from functools import reduce
-from itertools import cycle
 from src.utils import listutils
 from joblib import dump, load
 import pickle
-#def main():
+#def main():aa
 
 raw_data = "Dataset/iskra/"
 df_path = "Dataset/test/"
@@ -24,8 +23,8 @@ for elem in dfs:
         if elem.size > 10:
             dfs_unscaled.append(elem.to_numpy())
 scaled_dfs, df_scaler = scaler.fit_scale(dfs_unscaled)
-train, test = train_test_split(dfs_unscaled, test_size=0.9, random_state=42)
-test = np.array(test[35:38])
+train, test = train_test_split(scaled_dfs, test_size=0.4, random_state=42)
+#test = np.array(test[35:38])
 
 
 error_list = []
@@ -79,6 +78,8 @@ y_dict = {}
 error_dict = {}
 gap_list = []
 
+
+
 for gap in exp_list:
     print("\n\n\n---Distancia de predicion => " + str(gap))
     X_train, y_train = windowroll.map_window(train,window_size=80, gap=gap)
@@ -91,12 +92,13 @@ for gap in exp_list:
     df_aux = pd.DataFrame({"algorithm": "lr",
                            "error": [error_lr],
                            "gap": [gap]})
+
     pred = model_lr.predict(X_test)
     pred_list.append(pred)
     gap_dict[gap] = pred
     y_dict[gap] = y_test
     error_dict[gap] = error_lr
-
+    df_lr = df_lr.append(df_aux)
     #dump(model_lr,"model_persistence/lr_gap="+str(gap)+".joblib")
 
     #Descomentar para sacar graficas de comparativa de gaps
@@ -134,12 +136,12 @@ for gap in exp_list:
                            "params":[params_svr]})
 
     df_svr = df_svr.append(df_aux)
-    print("<<<<<<<< End of battery training >>>>>>>>>>>>>")
-    result_list = [df_lr, df_rfr, df_svr]
-    print(result_list)
-    file = open("Results/pickled_results_aprox1", "wb")
-    pickle.dump(result_list, file)
-    file.close()
+print("<<<<<<<< End of battery training >>>>>>>>>>>>>")
+result_list = [df_lr, df_rfr, df_svr]
+file = open("Results/pickled_results", "wb")
+pickle.dump(result_list, file)
+print(result_list)
+file.close()
 
 
 

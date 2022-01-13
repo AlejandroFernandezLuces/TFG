@@ -40,7 +40,7 @@ openapi-spec-validator==0.2.8
 opt-einsum==3.1.0
 pandas==0.25.2
 patsy==0.5.1
-Pillow==6.2.1
+Pillow==9.0.0
 pmdarima==1.5.2
 protobuf==3.11.2
 pyasn1==0.4.8

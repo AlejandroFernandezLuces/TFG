@@ -42,7 +42,7 @@ pandas==0.25.2
 patsy==0.5.1
 Pillow==9.3.0
 pmdarima==1.5.2
-protobuf==3.11.2
+protobuf==3.18.3
 pyasn1==0.4.8
 pyasn1-modules==0.2.7
 pyparsing==2.4.2
